@@ -1,0 +1,292 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "on_select",
+        "version": "2.0.0",
+        "bap_id": "ondc.sequelstring.com/buyer/protocol",
+        "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "transaction_id": "466460ac-37ce-4a56-bfde-3871fddcdf16",
+        "message_id": "a48cbb8e-da3a-4f24-8db1-a5f818268981",
+        "timestamp": "2025-10-17T10:38:10.418Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "c089d47d-5951-48a6-b654-d20be866b4b3",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "name": "Quality testing for Turmeric Whole",
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "REPORT_REQUIREMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "REPORT_DEADLINE"
+                                    },
+                                    "value": "2025-10-19T00:00:00.000Z"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CROP"
+                                    },
+                                    "value": "TURMERIC"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "DATE_OF_SOWING"
+                                    },
+                                    "value": "2025-04-04T22:00:00.000Z"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "FARM_STATUS"
+                                    },
+                                    "value": "RAIN_FED"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "ACRAGE"
+                                    },
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1C1",
+                    "parent_item_id": "I1",
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "category_ids": [
+                        "SRV14-1004"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ATTRIBUTE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1C2",
+                    "parent_item_id": "I1",
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "category_ids": [
+                        "SRV14-1004"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ATTRIBUTE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Seller-Fulfilled",
+                    "tracking": false,
+                    "stops": [
+                        {
+                            "type": "end",
+                            "time": {
+                                "label": "confirmed",
+                                "range": {
+                                    "start": "2025-10-17T10:36:50.525Z",
+                                    "end": "2025-10-18T00:00:00.000Z"
+                                }
+                            },
+                            "location": {
+                                "gps": "12.974002,77.613458",
+                                "area_code": "560001"
+                            }
+                        }
+                    ],
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    }
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "350.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Quality testing for Turmeric Whole",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        },
+                        "item": {
+                            "id": "I1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "value": "100.00"
+                            }
+                        },
+                        "tags": [
+                            {
+                                "descriptor": {
+                                    "code": "title"
+                                },
+                                "list": [
+                                    {
+                                        "descriptor": {
+                                            "code": "type"
+                                        },
+                                        "value": "item"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        },
+                        "item": {
+                            "id": "I1C1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "value": "100.00"
+                            }
+                        },
+                        "tags": [
+                            {
+                                "descriptor": {
+                                    "code": "title"
+                                },
+                                "list": [
+                                    {
+                                        "descriptor": {
+                                            "code": "type"
+                                        },
+                                        "value": "item"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "150.00"
+                        },
+                        "item": {
+                            "id": "I1C2",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "value": "150.00"
+                            }
+                        },
+                        "tags": [
+                            {
+                                "descriptor": {
+                                    "code": "title"
+                                },
+                                "list": [
+                                    {
+                                        "descriptor": {
+                                            "code": "type"
+                                        },
+                                        "value": "item"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT",
+                    "collected_by": "BAP"
+                }
+            ]
+        }
+    }
+}

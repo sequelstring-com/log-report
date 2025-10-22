@@ -1,0 +1,205 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "init",
+        "version": "2.0.0",
+        "bap_id": "ondc.sequelstring.com/buyer/protocol",
+        "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "transaction_id": "466460ac-37ce-4a56-bfde-3871fddcdf16",
+        "message_id": "a48cbb8e-da3a-4f24-8db1-a5f818268981",
+        "timestamp": "2025-10-17T10:38:10.190Z",
+        "ttl": "P30S"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "c089d47d-5951-48a6-b654-d20be866b4b3",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "fulfillment_ids": [
+                        "2"
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "REPORT_REQUIREMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "REPORT_DEADLINE"
+                                    },
+                                    "value": "2025-10-19T00:00:00.000Z"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CROP"
+                                    },
+                                    "value": "TURMERIC"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "DATE_OF_SOWING"
+                                    },
+                                    "value": "2025-04-04T22:00:00.000Z"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "FARM_STATUS"
+                                    },
+                                    "value": "RAIN_FED"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "ACRAGE"
+                                    },
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1C1",
+                    "parent_item_id": "I1",
+                    "fulfillment_ids": [
+                        "2"
+                    ],
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "category_ids": [
+                        "C1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ATTRIBUTE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1C2",
+                    "parent_item_id": "I1",
+                    "fulfillment_ids": [
+                        "2"
+                    ],
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "category_ids": [
+                        "C1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ATTRIBUTE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "John Doe",
+                "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+                "state": {
+                    "name": "Karnataka"
+                },
+                "city": {
+                    "name": "Bengaluru"
+                },
+                "tax_id": "XXXXXXXXXXXXXXX",
+                "email": "john.doe@gmail.com",
+                "phone": "9988998899"
+            },
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Seller-Fulfilled",
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "12.974002,77.613458",
+                                "address": "Farm 14 Near Village",
+                                "city": {
+                                    "name": "Bengaluru"
+                                },
+                                "country": {
+                                    "code": "IND"
+                                },
+                                "area_code": "560001",
+                                "state": {
+                                    "name": "Karnataka"
+                                }
+                            },
+                            "contact": {
+                                "phone": "9988998899"
+                            },
+                            "time": {
+                                "label": "confirmed",
+                                "range": {
+                                    "start": "2025-10-17T10:36:50.525Z",
+                                    "end": "2025-10-18T00:00:00.000Z"
+                                }
+                            }
+                        }
+                    ]
+                }
+            ],
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT",
+                    "collected_by": "BAP"
+                }
+            ]
+        }
+    }
+}

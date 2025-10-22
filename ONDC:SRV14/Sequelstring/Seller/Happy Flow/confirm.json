@@ -1,0 +1,390 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:080"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "confirm",
+        "version": "2.0.0",
+        "bap_id": "ondc.sequelstring.com/buyer/protocol",
+        "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "transaction_id": "466460ac-37ce-4a56-bfde-3871fddcdf16",
+        "message_id": "a5e5c37d-c821-4d22-9a75-87160e889cf5",
+        "timestamp": "2025-10-17T10:39:54.220Z",
+        "ttl": "PT30S"
+    },
+    "message": {
+        "order": {
+            "id": "21e010b5-4250-493c-a831-a9c6434dcd1a",
+            "status": "Created",
+            "provider": {
+                "id": "c089d47d-5951-48a6-b654-d20be866b4b3",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "I1",
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "REPORT_REQUIREMENT"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "REPORT_DEADLINE"
+                                    },
+                                    "value": "2025-10-19T00:00:00.000Z"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "CROP"
+                                    },
+                                    "value": "TURMERIC"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "DATE_OF_SOWING"
+                                    },
+                                    "value": "2025-04-04T22:00:00.000Z"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "FARM_STATUS"
+                                    },
+                                    "value": "RAIN_FED"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "ACRAGE"
+                                    },
+                                    "value": "2"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1C1",
+                    "parent_item_id": "I1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "category_ids": [
+                        "SRV14-1004"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ATTRIBUTE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "id": "I1C2",
+                    "parent_item_id": "I1",
+                    "fulfillment_ids": [
+                        "F1"
+                    ],
+                    "location_ids": [
+                        "L1"
+                    ],
+                    "category_ids": [
+                        "SRV14-1004"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "ATTRIBUTE"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "TYPE"
+                                    },
+                                    "value": "customization"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "billing": {
+                "name": "John Doe",
+                "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+                "state": {
+                    "name": "Karnataka"
+                },
+                "city": {
+                    "name": "Bengaluru"
+                },
+                "tax_id": "XXXXXXXXXXXXXXX",
+                "email": "john.doe@gmail.com",
+                "phone": "9988998899"
+            },
+            "fulfillments": [
+                {
+                    "id": "F1",
+                    "type": "Seller-Fulfilled",
+                    "tracking": false,
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "12.974002,77.613458",
+                                "address": "Farm 14 Near Village",
+                                "city": {
+                                    "name": "Bengaluru"
+                                },
+                                "country": {
+                                    "code": "IND"
+                                },
+                                "area_code": "560001",
+                                "state": {
+                                    "name": "Karnataka"
+                                }
+                            },
+                            "contact": {
+                                "phone": "9988998899"
+                            },
+                            "time": {
+                                "label": "confirmed",
+                                "range": {
+                                    "start": "2025-10-17T10:36:50.525Z",
+                                    "end": "2025-10-18T00:00:00.000Z"
+                                }
+                            },
+                            "customer": {
+                                "person": {
+                                    "name": "John Doe"
+                                }
+                            },
+                            "instructions": {
+                                "name": "Special Instructions",
+                                "short_desc": "Customer Special Instructions"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "350.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Quality testing for Turmeric Whole",
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        },
+                        "item": {
+                            "id": "I1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "value": "100.00"
+                            }
+                        },
+                        "tags": [
+                            {
+                                "descriptor": {
+                                    "code": "title"
+                                },
+                                "list": [
+                                    {
+                                        "descriptor": {
+                                            "code": "type"
+                                        },
+                                        "value": "item"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "100.00"
+                        },
+                        "item": {
+                            "id": "I1C1",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "value": "100.00"
+                            }
+                        },
+                        "tags": [
+                            {
+                                "descriptor": {
+                                    "code": "title"
+                                },
+                                "list": [
+                                    {
+                                        "descriptor": {
+                                            "code": "type"
+                                        },
+                                        "value": "item"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "price": {
+                            "currency": "INR",
+                            "value": "150.00"
+                        },
+                        "item": {
+                            "id": "I1C2",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "value": "150.00"
+                            }
+                        },
+                        "tags": [
+                            {
+                                "descriptor": {
+                                    "code": "title"
+                                },
+                                "list": [
+                                    {
+                                        "descriptor": {
+                                            "code": "type"
+                                        },
+                                        "value": "item"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "payments": [
+                {
+                    "id": "c5d472b6-652c-4cbe-ad29-64b36b3ffe2c",
+                    "collected_by": "BAP",
+                    "params": {
+                        "currency": "INR",
+                        "amount": "350.00",
+                        "bank_account_number": "123456789012"
+                    },
+                    "status": "PAID",
+                    "type": "PRE-FULFILLMENT",
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "Settlement_Details"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "Counterparty"
+                                    },
+                                    "value": "BPP"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Mode"
+                                    },
+                                    "value": "NEFT"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Beneficiary_Name"
+                                    },
+                                    "value": "Sequelstring AI"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Bank_Account_No"
+                                    },
+                                    "value": "123456789012"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Ifsc_Code"
+                                    },
+                                    "value": "BAT00112244"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "Buyer_Finder_Fee"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "Buyer_Finder_Fee_Type"
+                                    },
+                                    "value": "percentage"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Buyer_Finder_Fee_Amount"
+                                    },
+                                    "value": "3"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ],
+            "created_at": "2025-10-17T10:39:54.220Z",
+            "updated_at": "2025-10-17T10:39:54.220Z"
+        }
+    }
+}
