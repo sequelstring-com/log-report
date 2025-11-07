@@ -14,31 +14,30 @@
         "bap_id": "ondc.sequelstring.com/buyer/protocol",
         "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
-        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
-        "transaction_id": "466460ac-37ce-4a56-bfde-3871fddcdf16",
-        "message_id": "a48cbb8e-da3a-4f24-8db1-a5f818268981",
-        "timestamp": "2025-10-17T10:39:11.854Z",
+        "bpp_uri": "https://ondc.sequelstring.com/testing/seller",
+        "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
+        "message_id": "c12d7888-46af-4524-aeac-ed8f277b4d10",
+        "timestamp": "2025-11-07T07:28:43.348Z",
         "ttl": "P30S"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "c089d47d-5951-48a6-b654-d20be866b4b3",
+                "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "L1"
+                        "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     }
                 ]
             },
             "items": [
                 {
-                    "id": "I1",
-                    "name": "Quality testing for Turmeric Whole",
+                    "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "fulfillment_ids": [
-                        "F1"
+                        "SSF1"
                     ],
                     "tags": [
                         {
@@ -50,19 +49,19 @@
                                     "descriptor": {
                                         "code": "REPORT_DEADLINE"
                                     },
-                                    "value": "2025-10-19T00:00:00.000Z"
+                                    "value": "2025-11-08T22:00:00.000Z"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "CROP"
                                     },
-                                    "value": "TURMERIC"
+                                    "value": "ARHAR_WHOLE"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "DATE_OF_SOWING"
                                     },
-                                    "value": "2025-04-04T22:00:00.000Z"
+                                    "value": "2025-04-15T22:00:00.000Z"
                                 },
                                 {
                                     "descriptor": {
@@ -81,13 +80,13 @@
                     ]
                 },
                 {
-                    "id": "I1C1",
-                    "parent_item_id": "I1",
+                    "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
+                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "fulfillment_ids": [
-                        "F1"
+                        "SSF1"
                     ],
                     "category_ids": [
                         "SRV14-1004"
@@ -107,20 +106,20 @@
                                     "descriptor": {
                                         "code": "TYPE"
                                     },
-                                    "value": "customization"
+                                    "value": "CUSTOMIZATION"
                                 }
                             ]
                         }
                     ]
                 },
                 {
-                    "id": "I1C2",
-                    "parent_item_id": "I1",
+                    "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
+                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "fulfillment_ids": [
-                        "F1"
+                        "SSF1"
                     ],
                     "category_ids": [
                         "SRV14-1004"
@@ -140,7 +139,7 @@
                                     "descriptor": {
                                         "code": "TYPE"
                                     },
-                                    "value": "customization"
+                                    "value": "CUSTOMIZATION"
                                 }
                             ]
                         }
@@ -149,35 +148,22 @@
             ],
             "fulfillments": [
                 {
-                    "id": "F1",
+                    "id": "SSF1",
                     "type": "Seller-Fulfilled",
                     "tracking": false,
                     "stops": [
                         {
                             "type": "end",
-                            "location": {
-                                "gps": "12.974002,77.613458",
-                                "address": "Farm 14 Near Village",
-                                "city": {
-                                    "name": "Bengaluru"
-                                },
-                                "country": {
-                                    "code": "IND"
-                                },
-                                "area_code": "560001",
-                                "state": {
-                                    "name": "Karnataka"
-                                }
-                            },
-                            "contact": {
-                                "phone": "9988998899"
-                            },
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-10-17T10:36:50.525Z",
-                                    "end": "2025-10-18T00:00:00.000Z"
+                                    "start": "2025-11-06T22:00:00.000Z",
+                                    "end": "2025-11-08T22:00:00.000Z"
                                 }
+                            },
+                            "location": {
+                                "gps": "12.974002,77.613458",
+                                "area_code": "560001"
                             }
                         }
                     ],
@@ -191,24 +177,24 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "350.00"
+                    "value": "900.00"
                 },
                 "breakup": [
                     {
-                        "title": "Quality testing for Turmeric Whole",
+                        "title": "Testing for Arhar Whole",
                         "price": {
                             "currency": "INR",
-                            "value": "100.00"
+                            "value": "300.00"
                         },
                         "item": {
-                            "id": "I1",
+                            "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "quantity": {
                                 "selected": {
                                     "count": 1
                                 }
                             },
                             "price": {
-                                "value": "100.00"
+                                "value": "300"
                             }
                         },
                         "tags": [
@@ -230,17 +216,17 @@
                     {
                         "price": {
                             "currency": "INR",
-                            "value": "100.00"
+                            "value": "300.00"
                         },
                         "item": {
-                            "id": "I1C1",
+                            "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
                             "quantity": {
                                 "selected": {
                                     "count": 1
                                 }
                             },
                             "price": {
-                                "value": "100.00"
+                                "value": "300"
                             }
                         },
                         "tags": [
@@ -262,17 +248,17 @@
                     {
                         "price": {
                             "currency": "INR",
-                            "value": "150.00"
+                            "value": "300.00"
                         },
                         "item": {
-                            "id": "I1C2",
+                            "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
                             "quantity": {
                                 "selected": {
                                     "count": 1
                                 }
                             },
                             "price": {
-                                "value": "150.00"
+                                "value": "300"
                             }
                         },
                         "tags": [
@@ -295,7 +281,7 @@
                 "ttl": "P1D"
             },
             "billing": {
-                "name": "John Doe",
+                "name": "Nagendra Shetty",
                 "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
                 "state": {
                     "name": "Karnataka"
@@ -303,18 +289,18 @@
                 "city": {
                     "name": "Bengaluru"
                 },
-                "tax_id": "XXXXXXXXXXXXXXX",
-                "email": "john.doe@gmail.com",
-                "phone": "9988998899"
+                "tax_id": "98765432101234",
+                "email": "nobody@nomail.com",
+                "phone": "9886098860"
             },
             "payments": [
                 {
                     "type": "PRE-FULFILLMENT",
                     "collected_by": "BAP",
-                    "id": "c5d472b6-652c-4cbe-ad29-64b36b3ffe2c",
+                    "id": "b4544814-d587-44ed-8d87-8d91f0bfaa8c",
                     "params": {
                         "currency": "INR",
-                        "amount": "350.00",
+                        "amount": "900.00",
                         "bank_account_number": "123456789012"
                     },
                     "tags": [
@@ -339,7 +325,7 @@
                                     "descriptor": {
                                         "code": "Beneficiary_Name"
                                     },
-                                    "value": "Sequelstring AI"
+                                    "value": "Nirdosh Chauhan"
                                 },
                                 {
                                     "descriptor": {
@@ -351,7 +337,7 @@
                                     "descriptor": {
                                         "code": "Ifsc_Code"
                                     },
-                                    "value": "BAT00112244"
+                                    "value": "CN0011222277"
                                 }
                             ]
                         },
@@ -369,7 +355,7 @@
                                     "descriptor": {
                                         "code": "Buyer_Finder_Fee_Amount"
                                     },
-                                    "value": "1%"
+                                    "value": "0"
                                 }
                             ]
                         }

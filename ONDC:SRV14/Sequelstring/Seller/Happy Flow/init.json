@@ -14,30 +14,30 @@
         "bap_id": "ondc.sequelstring.com/buyer/protocol",
         "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
-        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
-        "transaction_id": "466460ac-37ce-4a56-bfde-3871fddcdf16",
-        "message_id": "a48cbb8e-da3a-4f24-8db1-a5f818268981",
-        "timestamp": "2025-10-17T10:38:10.190Z",
+        "bpp_uri": "https://ondc.sequelstring.com/testing/seller",
+        "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
+        "message_id": "c12d7888-46af-4524-aeac-ed8f277b4d10",
+        "timestamp": "2025-11-07T07:26:49.344Z",
         "ttl": "P30S"
     },
     "message": {
         "order": {
             "provider": {
-                "id": "c089d47d-5951-48a6-b654-d20be866b4b3",
+                "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "L1"
+                        "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     }
                 ]
             },
             "items": [
                 {
-                    "id": "I1",
+                    "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "fulfillment_ids": [
-                        "2"
+                        "SSF1"
                     ],
                     "tags": [
                         {
@@ -49,19 +49,19 @@
                                     "descriptor": {
                                         "code": "REPORT_DEADLINE"
                                     },
-                                    "value": "2025-10-19T00:00:00.000Z"
+                                    "value": "2025-11-08T22:00:00.000Z"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "CROP"
                                     },
-                                    "value": "TURMERIC"
+                                    "value": "ARHAR_WHOLE"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "DATE_OF_SOWING"
                                     },
-                                    "value": "2025-04-04T22:00:00.000Z"
+                                    "value": "2025-04-15T22:00:00.000Z"
                                 },
                                 {
                                     "descriptor": {
@@ -80,16 +80,16 @@
                     ]
                 },
                 {
-                    "id": "I1C1",
-                    "parent_item_id": "I1",
+                    "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
+                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "fulfillment_ids": [
-                        "2"
+                        "SSF1"
                     ],
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "category_ids": [
-                        "C1"
+                        "SRV14-1004"
                     ],
                     "quantity": {
                         "selected": {
@@ -113,16 +113,16 @@
                     ]
                 },
                 {
-                    "id": "I1C2",
-                    "parent_item_id": "I1",
+                    "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
+                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "fulfillment_ids": [
-                        "2"
+                        "SSF1"
                     ],
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "category_ids": [
-                        "C1"
+                        "SRV14-1004"
                     ],
                     "quantity": {
                         "selected": {
@@ -147,7 +147,7 @@
                 }
             ],
             "billing": {
-                "name": "John Doe",
+                "name": "Nagendra Shetty",
                 "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
                 "state": {
                     "name": "Karnataka"
@@ -155,13 +155,13 @@
                 "city": {
                     "name": "Bengaluru"
                 },
-                "tax_id": "XXXXXXXXXXXXXXX",
-                "email": "john.doe@gmail.com",
-                "phone": "9988998899"
+                "tax_id": "98765432101234",
+                "email": "nobody@nomail.com",
+                "phone": "9886098860"
             },
             "fulfillments": [
                 {
-                    "id": "F1",
+                    "id": "SSF1",
                     "type": "Seller-Fulfilled",
                     "stops": [
                         {
@@ -181,13 +181,13 @@
                                 }
                             },
                             "contact": {
-                                "phone": "9988998899"
+                                "phone": "9886098860"
                             },
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-10-17T10:36:50.525Z",
-                                    "end": "2025-10-18T00:00:00.000Z"
+                                    "start": "2025-11-06T22:00:00.000Z",
+                                    "end": "2025-11-08T22:00:00.000Z"
                                 }
                             }
                         }

@@ -13,35 +13,15 @@
         "version": "2.0.0",
         "bap_id": "ondc.sequelstring.com/buyer/protocol",
         "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-        "transaction_id": "466460ac-37ce-4a56-bfde-3871fddcdf16",
-        "message_id": "11a7cf38-fbb3-4348-a57f-ead0e26e2d14",
-        "timestamp": "2025-10-17T10:36:50.740Z",
+        "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
+        "message_id": "65fdf070-8f34-46a9-a5af-34bcfc9ae245",
+        "timestamp": "2025-11-07T07:17:39.170Z",
         "ttl": "PT30S",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "catalog": {
-            "fulfillments": [
-                {
-                    "id": "F1",
-                    "type": "Seller-Fulfilled"
-                }
-            ],
-            "payments": [
-                {
-                    "id": "1",
-                    "type": "PRE-FULFILLMENT"
-                },
-                {
-                    "id": "2",
-                    "type": "ON-FULFILLMENT"
-                },
-                {
-                    "id": "3",
-                    "type": "POST-FULFILLMENT"
-                }
-            ],
             "descriptor": {
                 "name": "Sequelstring Agri Assaying Provider",
                 "short_desc": "Sequelstring Assaying Provider",
@@ -52,33 +32,40 @@
                     }
                 ]
             },
+            "fulfillments": [
+                {
+                    "id": "SSF1",
+                    "type": "Seller-Fulfilled"
+                }
+            ],
+            "payments": [
+                {
+                    "id": "SSP1",
+                    "type": "PRE-FULFILLMENT"
+                }
+            ],
             "providers": [
                 {
-                    "id": "c089d47d-5951-48a6-b654-d20be866b4b3",
+                    "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                     "descriptor": {
-                        "name": "Sequelstring Assaying Provider store",
-                        "code": "P001",
-                        "short_desc": "Sequelstring Assaying Provider store",
-                        "long_desc": "Sequelstring Assaying Provider store",
-                        "images": [
-                            {
-                                "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
-                            }
-                        ]
+                        "name": "Sequelstring Assaying Lab",
+                        "code": "",
+                        "short_desc": "Sequelstring Assaying Lab",
+                        "long_desc": "Sequelstring Assaying Lab",
+                        "images": []
                     },
-                    "rating": "4.5",
-                    "ttl": "PT1D",
+                    "ttl": "P1D",
                     "locations": [
                         {
-                            "id": "L1",
-                            "gps": "28.499126, 77.161488",
-                            "address": "Sultanpur",
+                            "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c",
+                            "gps": "",
+                            "address": "sultanpur",
                             "city": {
                                 "code": "std:011",
-                                "name": "New Delhi"
+                                "name": "new delhi"
                             },
                             "state": {
-                                "code": "New Delhi"
+                                "code": "new delhi"
                             },
                             "country": {
                                 "code": "IND"
@@ -86,95 +73,54 @@
                             "area_code": "110030"
                         }
                     ],
-                    "creds": [
-                        {
-                            "id": "GHP-12345678",
-                            "type": "Certificate",
-                            "desc": "Good Hygienic Practices (GHP)",
-                            "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
-                        }
-                    ],
+                    "rating": "",
                     "time": {
                         "label": "validity",
                         "range": {
-                            "start": "2025-10-17T00:00:00.000Z",
-                            "end": "2025-10-18T00:00:00.000Z"
+                            "start": "2025-10-25T00:00:00.000Z",
+                            "end": "2027-10-25T00:00:00.000Z"
                         },
-                        "days": "01,02,03,04,05,06,07",
-                        "schedule": {
-                            "frequency": "PT1H",
-                            "holidays": [],
-                            "times": []
-                        }
+                        "days": "01,02,03,04,05,06,07"
                     },
-                    "tags": [
+                    "creds": [
                         {
-                            "descriptor": {
-                                "code": "serviceability"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "location"
-                                    },
-                                    "value": "L1"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "category"
-                                    },
-                                    "value": "SRV14-*"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "type"
-                                    },
-                                    "value": "13"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "val"
-                                    },
-                                    "value": "{\"type\": \"FeatureCollection\", \"features\": [{\"type\": \"Feature\", \"properties\": {}, \"geometry\": {\"coordinates\": [[[77.175571, 28.675927], [77.128737, 28.600972], [77.446934, 28.545325], [77.175571, 28.675927]]], \"type\": \"Polygon\"}}]}"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "unit"
-                                    },
-                                    "value": "geojson"
-                                }
-                            ]
+                            "id": "12345ABCD",
+                            "type": "ISO",
+                            "desc": "ISO Certification ",
+                            "url": ""
+                        }
+                    ],
+                    "tags": [],
+                    "fulfillments": [
+                        {
+                            "phone": "9876543210",
+                            "email": "noreply@sequelstring.com"
                         }
                     ],
                     "items": [
                         {
-                            "id": "I1",
+                            "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "descriptor": {
-                                "name": "Quality testing for Turmeric Whole",
-                                "short_desc": "Assaying service for Turmeric Whole",
-                                "long_desc": "Assaying service for Turmeric Whole",
-                                "images": [
-                                    {
-                                        "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
-                                    }
-                                ]
+                                "name": "Testing for Arhar Whole",
+                                "short_desc": "Assaying service for Arhar Whole",
+                                "long_desc": "Assaying service for Arhar Whole"
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "100.00",
-                                "minimum_value": "100.00"
+                                "value": "300",
+                                "minimum_value": "300"
                             },
                             "category_ids": [
                                 "SRV14-1004"
                             ],
                             "fulfillment_ids": [
-                                "F1"
+                                "SSF1"
                             ],
                             "location_ids": [
-                                "L1"
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                             ],
                             "payment_ids": [
-                                "1"
+                                "SSP1"
                             ],
                             "cancellation_terms": [
                                 {
@@ -184,7 +130,7 @@
                                         }
                                     },
                                     "cancellation_fee": {
-                                        "percentage": "0.00"
+                                        "percentage": 0
                                     }
                                 },
                                 {
@@ -194,7 +140,7 @@
                                         }
                                     },
                                     "cancellation_fee": {
-                                        "percentage": "10.00"
+                                        "percentage": 0
                                     }
                                 }
                             ],
@@ -208,7 +154,7 @@
                                             "descriptor": {
                                                 "code": "COMMODITY_CODE"
                                             },
-                                            "value": "TURMERIC"
+                                            "value": "ARHAR_WHOLE"
                                         }
                                     ]
                                 },
@@ -227,25 +173,24 @@
                                             "descriptor": {
                                                 "code": "ASSAYINGTEST_TYPE"
                                             },
-                                            "value": "physical"
+                                            "value": ""
                                         },
                                         {
                                             "descriptor": {
-                                                "code": "ACCURACY"
+                                                "code": "ACCURACY(%)"
                                             },
-                                            "value": "90%"
+                                            "value": "99"
                                         },
                                         {
                                             "descriptor": {
                                                 "code": "PICKUP_TAT"
                                             },
-                                            "value": "PT2D"
+                                            "value": ""
                                         },
                                         {
                                             "descriptor": {
                                                 "code": "COMPLETION_TAT"
-                                            },
-                                            "value": "PT1D"
+                                            }
                                         }
                                     ]
                                 },
@@ -284,37 +229,27 @@
                             "time": {
                                 "label": "validity",
                                 "range": {
-                                    "start": "2025-10-17T00:00:00.000Z",
-                                    "end": "2025-10-18T00:00:00.000Z"
+                                    "start": "2025-10-25T00:00:00.000Z",
+                                    "end": "2027-10-25T00:00:00.000Z"
                                 },
-                                "days": "01,02,03,04,05,06,07",
-                                "schedule": {
-                                    "frequency": "PT1H",
-                                    "holidays": [],
-                                    "times": []
-                                }
+                                "days": "01,02,03,04,05,06,07"
                             },
                             "matched": true,
                             "recommended": true
                         },
                         {
-                            "id": "I1C1",
-                            "parent_item_id": "I1",
+                            "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "descriptor": {
                                 "name": "Moisture",
                                 "code": "MOISTURE",
                                 "short_desc": "Moisture Testing",
-                                "long_desc": "Moisture Testing",
-                                "images": [
-                                    {
-                                        "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
-                                    }
-                                ]
+                                "long_desc": "Moisture Testing"
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "100.00",
-                                "minimum_value": "100.00"
+                                "value": "300",
+                                "minimum_value": "300"
                             },
                             "quantity": {
                                 "unitized": {
@@ -334,13 +269,13 @@
                                 "SRV14-1004"
                             ],
                             "fulfillment_ids": [
-                                "F1"
+                                "SSF1"
                             ],
                             "location_ids": [
-                                "L1"
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                             ],
                             "payment_ids": [
-                                "1"
+                                "SSP1"
                             ],
                             "tags": [
                                 {
@@ -352,7 +287,7 @@
                                             "descriptor": {
                                                 "code": "TYPE"
                                             },
-                                            "value": "customization"
+                                            "value": "CUSTOMIZATION"
                                         },
                                         {
                                             "descriptor": {
@@ -377,30 +312,25 @@
                                             "descriptor": {
                                                 "code": "ASSAYINGTEST_TYPE"
                                             },
-                                            "value": "physical"
+                                            "value": ""
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "id": "I1C2",
-                            "parent_item_id": "I1",
+                            "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "descriptor": {
-                                "name": "Foreign Matter",
+                                "name": "Foreign matter",
                                 "code": "FOREIGN_MATTER",
-                                "short_desc": "Foreign Matter Testing",
-                                "long_desc": "Foreign Matter Testing",
-                                "images": [
-                                    {
-                                        "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
-                                    }
-                                ]
+                                "short_desc": "Foreign matter Testing",
+                                "long_desc": "Foreign matter Testing"
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "150.00",
-                                "minimum_value": "180.00"
+                                "value": "300",
+                                "minimum_value": "300"
                             },
                             "quantity": {
                                 "unitized": {
@@ -420,13 +350,13 @@
                                 "SRV14-1004"
                             ],
                             "fulfillment_ids": [
-                                "F1"
+                                "SSF1"
                             ],
                             "location_ids": [
-                                "L1"
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                             ],
                             "payment_ids": [
-                                "1"
+                                "SSP1"
                             ],
                             "tags": [
                                 {
@@ -438,7 +368,7 @@
                                             "descriptor": {
                                                 "code": "TYPE"
                                             },
-                                            "value": "customization"
+                                            "value": "CUSTOMIZATION"
                                         },
                                         {
                                             "descriptor": {
@@ -463,30 +393,268 @@
                                             "descriptor": {
                                                 "code": "ASSAYINGTEST_TYPE"
                                             },
-                                            "value": "physical"
+                                            "value": ""
                                         }
                                     ]
                                 }
                             ]
                         },
                         {
-                            "id": "I1C8",
-                            "parent_item_id": "I1",
+                            "id": "9f52f887-55da-4287-b2e1-c5b70cc27d6d",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Weevilled Grains",
+                                "code": "WEEVILLED_GRAINS",
+                                "short_desc": "Weevilled Grains Testing",
+                                "long_desc": "Weevilled Grains Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "c2874f4d-ab0f-486d-953f-5809327eb7bb",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Damaged Grains",
+                                "code": "DAMAGED_GRAINS",
+                                "short_desc": "Damaged Grains Testing",
+                                "long_desc": "Damaged Grains Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "7bfbc040-7249-4cd2-97aa-dbc45e85c1ed",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Other Edible Grains",
+                                "code": "OTHER_EDIBLE_GRAINS",
+                                "short_desc": "Other Edible Grains Testing",
+                                "long_desc": "Other Edible Grains Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "9954eaa1-1bce-4e91-9519-0a3533342f6a",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "descriptor": {
                                 "name": "Uric Acid",
                                 "code": "URIC_ACID",
                                 "short_desc": "Uric Acid Testing",
-                                "long_desc": "Uric Acid Testing",
-                                "images": [
-                                    {
-                                        "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
-                                    }
-                                ]
+                                "long_desc": "Uric Acid Testing"
                             },
                             "price": {
                                 "currency": "INR",
-                                "value": "200.00",
-                                "minimum_value": "200.00"
+                                "value": "1000",
+                                "minimum_value": "1000"
                             },
                             "quantity": {
                                 "unitized": {
@@ -506,13 +674,13 @@
                                 "SRV14-1004"
                             ],
                             "fulfillment_ids": [
-                                "F1"
+                                "SSF1"
                             ],
                             "location_ids": [
-                                "L1"
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                             ],
                             "payment_ids": [
-                                "1"
+                                "SSP1"
                             ],
                             "tags": [
                                 {
@@ -524,7 +692,7 @@
                                             "descriptor": {
                                                 "code": "TYPE"
                                             },
-                                            "value": "customization"
+                                            "value": "CUSTOMIZATION"
                                         },
                                         {
                                             "descriptor": {
@@ -549,19 +717,254 @@
                                             "descriptor": {
                                                 "code": "ASSAYINGTEST_TYPE"
                                             },
-                                            "value": "physical"
+                                            "value": ""
                                         }
                                     ]
                                 }
                             ]
-                        }
-                    ],
-                    "fulfillments": [
+                        },
                         {
-                            "contact": {
-                                "phone": "9876543210",
-                                "email": "assaying.fulfillment@sequelstring.com"
-                            }
+                            "id": "3545da1d-6773-4053-844a-10f8363eef63",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Aflatoxin",
+                                "code": "AFLATOXIN",
+                                "short_desc": "Aflatoxin Testing",
+                                "long_desc": "Aflatoxin Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "2000",
+                                "minimum_value": "2000"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "false"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "cfb58a74-b23f-4e09-843c-ac7d7769a208",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Immature & Shriveled",
+                                "code": "IMMATURE_&_SHRIVELED",
+                                "short_desc": "Immature & Shriveled Testing",
+                                "long_desc": "Immature & Shriveled Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "91245335-8af9-4901-90c5-36502b39f213",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Admixture",
+                                "code": "ADMIXTURE",
+                                "short_desc": "Admixture Testing",
+                                "long_desc": "Admixture Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": ""
+                                        }
+                                    ]
+                                }
+                            ]
                         }
                     ]
                 }

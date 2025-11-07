@@ -15,31 +15,31 @@
         "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
-        "transaction_id": "466460ac-37ce-4a56-bfde-3871fddcdf16",
-        "message_id": "a5e5c37d-c821-4d22-9a75-87160e889cf5",
-        "timestamp": "2025-10-17T10:39:54.220Z",
+        "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
+        "message_id": "a2766ed7-a730-49ec-a6d9-d300c640a684",
+        "timestamp": "2025-11-07T08:20:38.026Z",
         "ttl": "PT30S"
     },
     "message": {
         "order": {
-            "id": "21e010b5-4250-493c-a831-a9c6434dcd1a",
+            "id": "0e3af35f-7630-4537-a040-c938f2aa1e5d",
             "status": "Created",
             "provider": {
-                "id": "c089d47d-5951-48a6-b654-d20be866b4b3",
+                "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "L1"
+                        "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     }
                 ]
             },
             "items": [
                 {
-                    "id": "I1",
+                    "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "fulfillment_ids": [
-                        "F1"
+                        "SSF1"
                     ],
                     "tags": [
                         {
@@ -51,19 +51,19 @@
                                     "descriptor": {
                                         "code": "REPORT_DEADLINE"
                                     },
-                                    "value": "2025-10-19T00:00:00.000Z"
+                                    "value": "2025-11-08T22:00:00.000Z"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "CROP"
                                     },
-                                    "value": "TURMERIC"
+                                    "value": "ARHAR_WHOLE"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "DATE_OF_SOWING"
                                     },
-                                    "value": "2025-04-04T22:00:00.000Z"
+                                    "value": "2025-04-15T22:00:00.000Z"
                                 },
                                 {
                                     "descriptor": {
@@ -82,13 +82,13 @@
                     ]
                 },
                 {
-                    "id": "I1C1",
-                    "parent_item_id": "I1",
+                    "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
+                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "fulfillment_ids": [
-                        "F1"
+                        "SSF1"
                     ],
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "category_ids": [
                         "SRV14-1004"
@@ -115,13 +115,13 @@
                     ]
                 },
                 {
-                    "id": "I1C2",
-                    "parent_item_id": "I1",
+                    "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
+                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "fulfillment_ids": [
-                        "F1"
+                        "SSF1"
                     ],
                     "location_ids": [
-                        "L1"
+                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
                     ],
                     "category_ids": [
                         "SRV14-1004"
@@ -149,7 +149,7 @@
                 }
             ],
             "billing": {
-                "name": "John Doe",
+                "name": "Nagendra Shetty",
                 "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
                 "state": {
                     "name": "Karnataka"
@@ -157,13 +157,13 @@
                 "city": {
                     "name": "Bengaluru"
                 },
-                "tax_id": "XXXXXXXXXXXXXXX",
-                "email": "john.doe@gmail.com",
-                "phone": "9988998899"
+                "tax_id": "98765432101234",
+                "email": "nobody@nomail.com",
+                "phone": "9886098860"
             },
             "fulfillments": [
                 {
-                    "id": "F1",
+                    "id": "SSF1",
                     "type": "Seller-Fulfilled",
                     "tracking": false,
                     "stops": [
@@ -184,23 +184,23 @@
                                 }
                             },
                             "contact": {
-                                "phone": "9988998899"
+                                "phone": "9886098860"
                             },
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-10-17T10:36:50.525Z",
-                                    "end": "2025-10-18T00:00:00.000Z"
+                                    "start": "2025-11-06T22:00:00.000Z",
+                                    "end": "2025-11-08T22:00:00.000Z"
                                 }
                             },
                             "customer": {
                                 "person": {
-                                    "name": "John Doe"
+                                    "name": "Nagendra Shetty"
                                 }
                             },
                             "instructions": {
                                 "name": "Special Instructions",
-                                "short_desc": "Customer Special Instructions"
+                                "short_desc": "Please try to reach in the first half of the day"
                             }
                         }
                     ]
@@ -209,24 +209,24 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "350.00"
+                    "value": "900.00"
                 },
                 "breakup": [
                     {
-                        "title": "Quality testing for Turmeric Whole",
+                        "title": "Testing for Arhar Whole",
                         "price": {
                             "currency": "INR",
-                            "value": "100.00"
+                            "value": "300.00"
                         },
                         "item": {
-                            "id": "I1",
+                            "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "quantity": {
                                 "selected": {
                                     "count": 1
                                 }
                             },
                             "price": {
-                                "value": "100.00"
+                                "value": "300"
                             }
                         },
                         "tags": [
@@ -248,17 +248,17 @@
                     {
                         "price": {
                             "currency": "INR",
-                            "value": "100.00"
+                            "value": "300.00"
                         },
                         "item": {
-                            "id": "I1C1",
+                            "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
                             "quantity": {
                                 "selected": {
                                     "count": 1
                                 }
                             },
                             "price": {
-                                "value": "100.00"
+                                "value": "300"
                             }
                         },
                         "tags": [
@@ -280,17 +280,17 @@
                     {
                         "price": {
                             "currency": "INR",
-                            "value": "150.00"
+                            "value": "300.00"
                         },
                         "item": {
-                            "id": "I1C2",
+                            "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
                             "quantity": {
                                 "selected": {
                                     "count": 1
                                 }
                             },
                             "price": {
-                                "value": "150.00"
+                                "value": "300"
                             }
                         },
                         "tags": [
@@ -314,11 +314,11 @@
             },
             "payments": [
                 {
-                    "id": "c5d472b6-652c-4cbe-ad29-64b36b3ffe2c",
+                    "id": "7dee760b-4738-4343-9bec-890b675aba7b",
                     "collected_by": "BAP",
                     "params": {
+                        "amount": "900.00",
                         "currency": "INR",
-                        "amount": "350.00",
                         "bank_account_number": "123456789012"
                     },
                     "status": "PAID",
@@ -339,13 +339,13 @@
                                     "descriptor": {
                                         "code": "Mode"
                                     },
-                                    "value": "NEFT"
+                                    "value": "UPI"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "Beneficiary_Name"
                                     },
-                                    "value": "Sequelstring AI"
+                                    "value": "Nirdosh Chauhan"
                                 },
                                 {
                                     "descriptor": {
@@ -357,7 +357,7 @@
                                     "descriptor": {
                                         "code": "Ifsc_Code"
                                     },
-                                    "value": "BAT00112244"
+                                    "value": "CN0011222277"
                                 }
                             ]
                         },
@@ -376,15 +376,15 @@
                                     "descriptor": {
                                         "code": "Buyer_Finder_Fee_Amount"
                                     },
-                                    "value": "3"
+                                    "value": "0"
                                 }
                             ]
                         }
                     ]
                 }
             ],
-            "created_at": "2025-10-17T10:39:54.220Z",
-            "updated_at": "2025-10-17T10:39:54.220Z"
+            "created_at": "2025-11-07T08:20:38.026Z",
+            "updated_at": "2025-11-07T08:20:38.026Z"
         }
     }
 }
