@@ -13,9 +13,9 @@
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
-        "message_id": "b17e6e38-a3e9-4cdb-8b23-cec41c1bc457",
-        "timestamp": "2025-11-19T11:09:15.031Z",
+        "transaction_id": "21111283-bac3-4d33-983f-820a2d89359f",
+        "message_id": "2ef169c7-e340-40b0-a0fc-e6fbd7a0b55e",
+        "timestamp": "2025-11-19T09:29:44.976Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"

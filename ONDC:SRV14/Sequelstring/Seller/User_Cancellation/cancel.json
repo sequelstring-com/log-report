@@ -1,0 +1,27 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:011"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "cancel",
+        "version": "2.0.0",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "21111283-bac3-4d33-983f-820a2d89359f",
+        "message_id": "097db02b-c717-4c48-9f4c-b65c5cabd9d5",
+        "timestamp": "2025-11-19T09:48:38.816Z",
+        "ttl": "PT30S",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
+    },
+    "message": {
+        "order_id": "0b2bb7ce-f235-4d90-88d0-f0d95b5b977a",
+        "cancellation_reason_id": "001"
+    }
+}

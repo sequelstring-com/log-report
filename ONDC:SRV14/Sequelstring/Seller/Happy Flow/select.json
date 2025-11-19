@@ -3,7 +3,7 @@
         "domain": "ONDC:SRV14",
         "location": {
             "city": {
-                "code": "std:080"
+                "code": "std:011"
             },
             "country": {
                 "code": "IND"
@@ -11,14 +11,14 @@
         },
         "action": "select",
         "version": "2.0.0",
-        "bap_id": "ondc.sequelstring.com/buyer/protocol",
-        "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
-        "bpp_uri": "https://ondc.sequelstring.com/testing/seller",
-        "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
-        "message_id": "c12d7888-46af-4524-aeac-ed8f277b4d10",
-        "timestamp": "2025-11-07T07:26:49.344Z",
-        "ttl": "PT30S"
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
+        "message_id": "306bd1ef-b2ef-4507-a741-3f76fd3db069",
+        "timestamp": "2025-11-19T11:09:23.483Z",
+        "ttl": "PT30S",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "order": {
@@ -26,7 +26,7 @@
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                        "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     }
                 ]
             },
@@ -34,135 +34,42 @@
                 {
                     "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
-                    ],
-                    "fulfillment_ids": [
-                        "SSF1"
-                    ],
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "REPORT_REQUIREMENT"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "REPORT_DEADLINE"
-                                    },
-                                    "value": "2025-11-08T22:00:00.000Z"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "CROP"
-                                    },
-                                    "value": "ARHAR_WHOLE"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "DATE_OF_SOWING"
-                                    },
-                                    "value": "2025-04-15T22:00:00.000Z"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "FARM_STATUS"
-                                    },
-                                    "value": "RAIN_FED"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "ACRAGE"
-                                    },
-                                    "value": "2"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
-                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
-                    "fulfillment_ids": [
-                        "SSF1"
-                    ],
-                    "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                        "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     ],
                     "category_ids": [
                         "SRV14-1004"
                     ],
-                    "quantity": {
-                        "selected": {
-                            "count": 1
-                        }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "ATTRIBUTE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "customization"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
-                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "fulfillment_ids": [
                         "SSF1"
                     ],
-                    "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
-                    ],
-                    "category_ids": [
-                        "SRV14-1004"
-                    ],
+                    "price": {
+                        "currency": "INR",
+                        "value": "300",
+                        "minimum_value": "300"
+                    },
                     "quantity": {
                         "selected": {
                             "count": 1
                         }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "ATTRIBUTE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "customization"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
             "fulfillments": [
                 {
-                    "id": "SSF1",
                     "type": "Seller-Fulfilled",
                     "stops": [
                         {
                             "type": "end",
-                            "time": {
-                                "label": "selected",
-                                "range": {
-                                    "start": "2025-11-06T22:00:00.000Z",
-                                    "end": "2025-11-08T22:00:00.000Z"
-                                }
-                            },
                             "location": {
                                 "gps": "12.974002,77.613458",
                                 "area_code": "560001"
+                            },
+                            "time": {
+                                "label": "selected",
+                                "range": {
+                                    "start": "2025-11-19T00:00:00.000Z",
+                                    "end": "2025-11-20T00:00:00.000Z"
+                                }
                             }
                         }
                     ]

@@ -3,7 +3,7 @@
         "domain": "ONDC:SRV14",
         "location": {
             "city": {
-                "code": "std:080"
+                "code": "std:011"
             },
             "country": {
                 "code": "IND"
@@ -11,24 +11,22 @@
         },
         "action": "confirm",
         "version": "2.0.0",
-        "bap_id": "ondc.sequelstring.com/buyer/protocol",
-        "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
+        "message_id": "cbe0d0f9-7f13-4774-89cc-408714f49280",
+        "timestamp": "2025-11-19T11:09:36.182Z",
+        "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
-        "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
-        "message_id": "a2766ed7-a730-49ec-a6d9-d300c640a684",
-        "timestamp": "2025-11-07T08:20:38.026Z",
-        "ttl": "PT30S"
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "order": {
-            "id": "0e3af35f-7630-4537-a040-c938f2aa1e5d",
-            "status": "Created",
             "provider": {
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                        "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     }
                 ]
             },
@@ -36,171 +34,47 @@
                 {
                     "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                        "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     ],
                     "fulfillment_ids": [
                         "SSF1"
-                    ],
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "REPORT_REQUIREMENT"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "REPORT_DEADLINE"
-                                    },
-                                    "value": "2025-11-08T22:00:00.000Z"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "CROP"
-                                    },
-                                    "value": "ARHAR_WHOLE"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "DATE_OF_SOWING"
-                                    },
-                                    "value": "2025-04-15T22:00:00.000Z"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "FARM_STATUS"
-                                    },
-                                    "value": "RAIN_FED"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "ACRAGE"
-                                    },
-                                    "value": "2"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
-                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
-                    "fulfillment_ids": [
-                        "SSF1"
-                    ],
-                    "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
-                    ],
-                    "category_ids": [
-                        "SRV14-1004"
                     ],
                     "quantity": {
                         "selected": {
                             "count": 1
                         }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "ATTRIBUTE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "customization"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
-                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
-                    "fulfillment_ids": [
-                        "SSF1"
-                    ],
-                    "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
-                    ],
-                    "category_ids": [
-                        "SRV14-1004"
-                    ],
-                    "quantity": {
-                        "selected": {
-                            "count": 1
-                        }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "ATTRIBUTE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "customization"
-                                }
-                            ]
-                        }
-                    ]
+                    }
                 }
             ],
-            "billing": {
-                "name": "Nagendra Shetty",
-                "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
-                "state": {
-                    "name": "Karnataka"
-                },
-                "city": {
-                    "name": "Bengaluru"
-                },
-                "tax_id": "98765432101234",
-                "email": "nobody@nomail.com",
-                "phone": "9886098860"
-            },
             "fulfillments": [
                 {
                     "id": "SSF1",
                     "type": "Seller-Fulfilled",
                     "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
                     "stops": [
                         {
                             "type": "end",
                             "location": {
                                 "gps": "12.974002,77.613458",
-                                "address": "Farm 14 Near Village",
-                                "city": {
-                                    "name": "Bengaluru"
-                                },
-                                "country": {
-                                    "code": "IND"
-                                },
-                                "area_code": "560001",
-                                "state": {
-                                    "name": "Karnataka"
-                                }
-                            },
-                            "contact": {
-                                "phone": "9886098860"
+                                "area_code": "560001"
                             },
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-11-06T22:00:00.000Z",
-                                    "end": "2025-11-08T22:00:00.000Z"
+                                    "start": "2025-11-19T00:00:00.000Z",
+                                    "end": "2025-11-20T00:00:00.000Z"
                                 }
                             },
-                            "customer": {
-                                "person": {
-                                    "name": "Nagendra Shetty"
-                                }
+                            "contact": {
+                                "email": "nobody@nomail.com"
                             },
-                            "instructions": {
-                                "name": "Special Instructions",
-                                "short_desc": "Please try to reach in the first half of the day"
+                            "person": {
+                                "name": "Ramu"
                             }
                         }
                     ]
@@ -209,7 +83,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "900.00"
+                    "value": "300.00"
                 },
                 "breakup": [
                     {
@@ -226,70 +100,7 @@
                                 }
                             },
                             "price": {
-                                "value": "300"
-                            }
-                        },
-                        "tags": [
-                            {
-                                "descriptor": {
-                                    "code": "title"
-                                },
-                                "list": [
-                                    {
-                                        "descriptor": {
-                                            "code": "type"
-                                        },
-                                        "value": "item"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "price": {
-                            "currency": "INR",
-                            "value": "300.00"
-                        },
-                        "item": {
-                            "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
-                            "quantity": {
-                                "selected": {
-                                    "count": 1
-                                }
-                            },
-                            "price": {
-                                "value": "300"
-                            }
-                        },
-                        "tags": [
-                            {
-                                "descriptor": {
-                                    "code": "title"
-                                },
-                                "list": [
-                                    {
-                                        "descriptor": {
-                                            "code": "type"
-                                        },
-                                        "value": "item"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "price": {
-                            "currency": "INR",
-                            "value": "300.00"
-                        },
-                        "item": {
-                            "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
-                            "quantity": {
-                                "selected": {
-                                    "count": 1
-                                }
-                            },
-                            "price": {
+                                "currency": "INR",
                                 "value": "300"
                             }
                         },
@@ -312,21 +123,35 @@
                 ],
                 "ttl": "P1D"
             },
+            "billing": {
+                "name": "ONDC buyer",
+                "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+                "state": {
+                    "name": "Karnataka"
+                },
+                "city": {
+                    "name": "Bengaluru"
+                },
+                "tax_id": "XXXXXXXXXXXXXXX",
+                "email": "nobody@nomail.com",
+                "phone": "9886098860"
+            },
             "payments": [
                 {
-                    "id": "7dee760b-4738-4343-9bec-890b675aba7b",
-                    "collected_by": "BAP",
-                    "params": {
-                        "amount": "900.00",
-                        "currency": "INR",
-                        "bank_account_number": "123456789012"
-                    },
-                    "status": "PAID",
                     "type": "PRE-FULFILLMENT",
+                    "collected_by": "BAP",
+                    "id": "8c47e0cd-2d24-449f-b1b4-91c5f692f093",
+                    "params": {
+                        "currency": "INR",
+                        "amount": "300.00",
+                        "bank_account_number": "xxxxx",
+                        "virtual_payment_address": "nirdosh@okicici",
+                        "transaction_id": "1a89fafc-dada-48df-8ac0-e076240e36d3"
+                    },
                     "tags": [
                         {
                             "descriptor": {
-                                "code": "Settlement_Details"
+                                "code": "SETTLEMENT_DETAILS"
                             },
                             "list": [
                                 {
@@ -339,25 +164,25 @@
                                     "descriptor": {
                                         "code": "Mode"
                                     },
-                                    "value": "UPI"
+                                    "value": "NEFT"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "Beneficiary_Name"
                                     },
-                                    "value": "Nirdosh Chauhan"
+                                    "value": "xxxxx"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "Bank_Account_No"
                                     },
-                                    "value": "123456789012"
+                                    "value": "xxxxx"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "Ifsc_Code"
                                     },
-                                    "value": "CN0011222277"
+                                    "value": "xxxxx"
                                 }
                             ]
                         },
@@ -380,11 +205,26 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "status": "PAID"
+                },
+                {
+                    "params": {
+                        "transaction_id": "e9752db0-9ea4-423a-8373-992e6d754a0d"
+                    },
+                    "status": "NOT-PAID"
                 }
             ],
-            "created_at": "2025-11-07T08:20:38.026Z",
-            "updated_at": "2025-11-07T08:20:38.026Z"
+            "id": "f5578449-dfb3-45b8-8a1c-e7d79af098e6",
+            "status": "Created",
+            "created_at": "2025-11-19T11:09:36.182Z",
+            "updated_at": "2025-11-19T11:09:36.182Z",
+            "xinput": {
+                "form": {
+                    "submission_id": "376caa1c-b81c-4d7a-8f7e-3c1486662433",
+                    "status": "SUCCESS"
+                }
+            }
         }
     }
 }

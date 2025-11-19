@@ -9,21 +9,21 @@
                 "code": "IND"
             }
         },
-        "action": "on_status",
+        "action": "on_confirm",
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
-        "message_id": "78ed3dc1-8f3a-4a73-afbf-811dcb4b1ce2",
-        "timestamp": "2025-11-19T11:16:17.581Z",
+        "transaction_id": "51a3558e-ccb4-4a3d-8891-7ebedc6c06dc",
+        "message_id": "85c081ae-d894-4cb4-8fb7-c62328d63496",
+        "timestamp": "2025-11-19T10:08:17.571Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "order": {
-            "id": "f5578449-dfb3-45b8-8a1c-e7d79af098e6",
-            "status": "In-progress",
+            "id": "4007972e-4e56-4782-a32a-ac8cc69839d9",
+            "status": "Created",
             "provider": {
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
@@ -38,7 +38,7 @@
                     "id": "SSF1",
                     "state": {
                         "descriptor": {
-                            "code": "REPORT_GENERATED"
+                            "code": "PENDING"
                         }
                     },
                     "type": "Seller-Fulfilled",
@@ -62,40 +62,6 @@
                             },
                             "person": {
                                 "name": "Ramu"
-                            },
-                            "instructions": {
-                                "name": "Special Instructions",
-                                "short_desc": "Will be reaching in next one hour, Please keep the sample handy"
-                            },
-                            "authorization": {
-                                "type": "OTP",
-                                "token": "2190",
-                                "valid_from": "2025-11-19T11:10:32.720Z",
-                                "valid_to": "2025-11-20T11:10:32.720Z",
-                                "status": "valid"
-                            }
-                        },
-                        {
-                            "type": "start",
-                            "location": {
-                                "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae",
-                                "descriptor": {
-                                    "name": "Sequelstring Assaying Lab"
-                                },
-                                "gps": "28.497124, 77.159740"
-                            },
-                            "time": {
-                                "range": {
-                                    "start": "2025-11-19T11:10:32.726Z",
-                                    "end": "2025-11-20T11:10:32.726Z"
-                                }
-                            },
-                            "contact": {
-                                "phone": "9876543210",
-                                "email": "john.travolta@assaying.com"
-                            },
-                            "person": {
-                                "name": "John Travolta"
                             }
                         }
                     ],
@@ -162,7 +128,7 @@
                 {
                     "type": "PRE-FULFILLMENT",
                     "collected_by": "BAP",
-                    "id": "8c47e0cd-2d24-449f-b1b4-91c5f692f093",
+                    "id": "f7b8ddfb-cefd-477f-9e6e-61de2dcdccac",
                     "params": {
                         "currency": "INR",
                         "amount": "300.00",
@@ -243,94 +209,11 @@
                         "selected": {
                             "count": 1
                         }
-                    },
-                    "cancellation_terms": [
-                        {
-                            "fulfillment_state": {
-                                "descriptor": {
-                                    "code": "PENDING"
-                                }
-                            },
-                            "cancellation_fee": {
-                                "percentage": 0
-                            }
-                        },
-                        {
-                            "fulfillment_state": {
-                                "descriptor": {
-                                    "code": "IN_TRANSIT"
-                                }
-                            },
-                            "cancellation_fee": {
-                                "percentage": 0
-                            }
-                        }
-                    ],
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "RESCHEDULE_TERMS"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "fulfillment_state"
-                                    },
-                                    "value": "Pending"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "RESCHEDULE_ELIGIBLE"
-                                    },
-                                    "value": "true"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "RESCHEDULE_FEE"
-                                    },
-                                    "value": "0.0"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "RESCHEDULE_WITHIN"
-                                    },
-                                    "value": "PT1D"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "cancellation_terms": [
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "PENDING"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": 0
-                    }
-                },
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "IN_TRANSIT"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": 0
                     }
                 }
             ],
-            "created_at": "2025-11-19T11:09:36.182Z",
-            "updated_at": "2025-11-19T11:16:17.581Z",
-            "documents": [
-                {
-                    "url": "https://ondc-preprod.sequelstring.com/seller/assaying/invoice/f5578449-dfb3-45b8-8a1c-e7d79af098e6",
-                    "label": "INVOICE"
-                }
-            ]
+            "created_at": "2025-11-19T10:08:17.545Z",
+            "updated_at": "2025-11-19T10:08:17.571Z"
         }
     }
 }

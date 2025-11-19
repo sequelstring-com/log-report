@@ -3,7 +3,7 @@
         "domain": "ONDC:SRV14",
         "location": {
             "city": {
-                "code": "std:080"
+                "code": "std:011"
             },
             "country": {
                 "code": "IND"
@@ -11,24 +11,24 @@
         },
         "action": "on_status",
         "version": "2.0.0",
-        "bap_id": "ondc.sequelstring.com/buyer/protocol",
-        "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
+        "message_id": "92081c12-46e9-4550-9672-2e782cd5fefe",
+        "timestamp": "2025-11-19T11:17:00.003Z",
+        "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
-        "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
-        "message_id": "d50349f6-f451-424b-ad60-b0fd548ffc49",
-        "timestamp": "2025-11-07T08:58:23.105Z",
-        "ttl": "PT30S"
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "order": {
-            "id": "0e3af35f-7630-4537-a040-c938f2aa1e5d",
+            "id": "f5578449-dfb3-45b8-8a1c-e7d79af098e6",
             "status": "Completed",
             "provider": {
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                        "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     }
                 ],
                 "rateable": true
@@ -48,66 +48,54 @@
                             "type": "end",
                             "location": {
                                 "gps": "12.974002,77.613458",
-                                "address": "Farm 14 Near Village",
-                                "city": {
-                                    "name": "Bengaluru"
-                                },
-                                "country": {
-                                    "code": "IND"
-                                },
-                                "area_code": "560001",
-                                "state": {
-                                    "name": "Karnataka"
-                                }
-                            },
-                            "contact": {
-                                "phone": "9886098860"
+                                "area_code": "560001"
                             },
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-11-06T22:00:00.000Z",
-                                    "end": "2025-11-08T22:00:00.000Z"
+                                    "start": "2025-11-19T00:00:00.000Z",
+                                    "end": "2025-11-20T00:00:00.000Z"
                                 }
                             },
-                            "customer": {
-                                "person": {
-                                    "name": "Nagendra Shetty"
-                                }
+                            "contact": {
+                                "email": "nobody@nomail.com"
+                            },
+                            "person": {
+                                "name": "Ramu"
                             },
                             "instructions": {
                                 "name": "Special Instructions",
-                                "short_desc": "Please try to reach in the first half of the day"
+                                "short_desc": "Will be reaching in next one hour, Please keep the sample handy"
                             },
                             "authorization": {
                                 "type": "OTP",
-                                "token": "1234",
-                                "valid_from": "2025-11-07T08:20:38.634Z",
-                                "valid_to": "2025-11-07T18:30:00.000Z",
+                                "token": "2190",
+                                "valid_from": "2025-11-19T11:10:32.720Z",
+                                "valid_to": "2025-11-20T11:10:32.720Z",
                                 "status": "valid"
                             }
                         },
                         {
                             "type": "start",
                             "location": {
-                                "id": "c4052d12-100a-4c66-94ac-2a39a615ec5c",
+                                "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae",
                                 "descriptor": {
-                                    "name": "ABC Agri Assaying Provider"
+                                    "name": "Sequelstring Assaying Lab"
                                 },
-                                "gps": "12.956399,77.636803"
+                                "gps": "28.497124, 77.159740"
                             },
                             "time": {
                                 "range": {
-                                    "start": "2025-11-07T09:00:00Z",
-                                    "end": "2025-11-07T12:00:00Z"
+                                    "start": "2025-11-19T11:10:32.726Z",
+                                    "end": "2025-11-20T11:10:32.726Z"
                                 }
                             },
                             "contact": {
-                                "phone": "9886098860",
-                                "email": "nobody@nomail.com"
+                                "phone": "9876543210",
+                                "email": "john.travolta@assaying.com"
                             },
                             "person": {
-                                "name": "Kishan"
+                                "name": "John Travolta"
                             }
                         }
                     ],
@@ -117,7 +105,7 @@
             "quote": {
                 "price": {
                     "currency": "INR",
-                    "value": "900.00"
+                    "value": "300.00"
                 },
                 "breakup": [
                     {
@@ -134,70 +122,7 @@
                                 }
                             },
                             "price": {
-                                "value": "300"
-                            }
-                        },
-                        "tags": [
-                            {
-                                "descriptor": {
-                                    "code": "title"
-                                },
-                                "list": [
-                                    {
-                                        "descriptor": {
-                                            "code": "type"
-                                        },
-                                        "value": "item"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "price": {
-                            "currency": "INR",
-                            "value": "300.00"
-                        },
-                        "item": {
-                            "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
-                            "quantity": {
-                                "selected": {
-                                    "count": 1
-                                }
-                            },
-                            "price": {
-                                "value": "300"
-                            }
-                        },
-                        "tags": [
-                            {
-                                "descriptor": {
-                                    "code": "title"
-                                },
-                                "list": [
-                                    {
-                                        "descriptor": {
-                                            "code": "type"
-                                        },
-                                        "value": "item"
-                                    }
-                                ]
-                            }
-                        ]
-                    },
-                    {
-                        "price": {
-                            "currency": "INR",
-                            "value": "300.00"
-                        },
-                        "item": {
-                            "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
-                            "quantity": {
-                                "selected": {
-                                    "count": 1
-                                }
-                            },
-                            "price": {
+                                "currency": "INR",
                                 "value": "300"
                             }
                         },
@@ -221,7 +146,7 @@
                 "ttl": "P1D"
             },
             "billing": {
-                "name": "Nagendra Shetty",
+                "name": "ONDC buyer",
                 "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
                 "state": {
                     "name": "Karnataka"
@@ -229,25 +154,25 @@
                 "city": {
                     "name": "Bengaluru"
                 },
-                "tax_id": "98765432101234",
+                "tax_id": "XXXXXXXXXXXXXXX",
                 "email": "nobody@nomail.com",
                 "phone": "9886098860"
             },
             "payments": [
                 {
-                    "id": "7dee760b-4738-4343-9bec-890b675aba7b",
-                    "collected_by": "BAP",
-                    "params": {
-                        "amount": "900.00",
-                        "currency": "INR",
-                        "bank_account_number": "123456789012"
-                    },
-                    "status": "PAID",
                     "type": "PRE-FULFILLMENT",
+                    "collected_by": "BAP",
+                    "id": "8c47e0cd-2d24-449f-b1b4-91c5f692f093",
+                    "params": {
+                        "currency": "INR",
+                        "amount": "300.00",
+                        "bank_account_number": "xxxxx",
+                        "virtual_payment_address": "nirdosh@okicici"
+                    },
                     "tags": [
                         {
                             "descriptor": {
-                                "code": "Settlement_Details"
+                                "code": "SETTLEMENT_DETAILS"
                             },
                             "list": [
                                 {
@@ -260,25 +185,25 @@
                                     "descriptor": {
                                         "code": "Mode"
                                     },
-                                    "value": "UPI"
+                                    "value": "NEFT"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "Beneficiary_Name"
                                     },
-                                    "value": "Nirdosh Chauhan"
+                                    "value": "xxxxx"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "Bank_Account_No"
                                     },
-                                    "value": "123456789012"
+                                    "value": "xxxxx"
                                 },
                                 {
                                     "descriptor": {
                                         "code": "Ifsc_Code"
                                     },
-                                    "value": "CN0011222277"
+                                    "value": "xxxxx"
                                 }
                             ]
                         },
@@ -301,17 +226,45 @@
                                 }
                             ]
                         }
-                    ]
+                    ],
+                    "status": "PAID"
                 }
             ],
             "items": [
                 {
                     "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                     "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
+                        "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     ],
                     "fulfillment_ids": [
                         "SSF1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    },
+                    "cancellation_terms": [
+                        {
+                            "fulfillment_state": {
+                                "descriptor": {
+                                    "code": "PENDING"
+                                }
+                            },
+                            "cancellation_fee": {
+                                "percentage": 0
+                            }
+                        },
+                        {
+                            "fulfillment_state": {
+                                "descriptor": {
+                                    "code": "IN_TRANSIT"
+                                }
+                            },
+                            "cancellation_fee": {
+                                "percentage": 0
+                            }
+                        }
                     ],
                     "tags": [
                         {
@@ -323,7 +276,7 @@
                                     "descriptor": {
                                         "code": "fulfillment_state"
                                     },
-                                    "value": "PENDING"
+                                    "value": "Pending"
                                 },
                                 {
                                     "descriptor": {
@@ -345,94 +298,6 @@
                                 }
                             ]
                         }
-                    ],
-                    "cancellation_terms": [
-                        {
-                            "fulfillment_state": {
-                                "descriptor": {
-                                    "code": "PENDING"
-                                }
-                            },
-                            "cancellation_fee": {
-                                "percentage": "0.00"
-                            }
-                        },
-                        {
-                            "fulfillment_state": {
-                                "descriptor": {
-                                    "code": "IN_TRANSIT"
-                                }
-                            },
-                            "cancellation_fee": {
-                                "percentage": "10.00"
-                            }
-                        }
-                    ]
-                },
-                {
-                    "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
-                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
-                    "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
-                    ],
-                    "fulfillment_ids": [
-                        "SSF1"
-                    ],
-                    "category_ids": [
-                        "SRV14-1004"
-                    ],
-                    "quantity": {
-                        "selected": {
-                            "count": 1
-                        }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "ATTRIBUTE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "CUSTOMIZATION"
-                                }
-                            ]
-                        }
-                    ]
-                },
-                {
-                    "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
-                    "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
-                    "location_ids": [
-                        "c4052d12-100a-4c66-94ac-2a39a615ec5c"
-                    ],
-                    "fulfillment_ids": [
-                        "SSF1"
-                    ],
-                    "category_ids": [
-                        "SRV14-1004"
-                    ],
-                    "quantity": {
-                        "selected": {
-                            "count": 1
-                        }
-                    },
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "ATTRIBUTE"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "TYPE"
-                                    },
-                                    "value": "CUSTOMIZATION"
-                                }
-                            ]
-                        }
                     ]
                 }
             ],
@@ -440,118 +305,33 @@
                 {
                     "fulfillment_state": {
                         "descriptor": {
-                            "code": "PENDING",
-                            "short_desc": "002"
+                            "code": "PENDING"
                         }
                     },
                     "cancellation_fee": {
-                        "percentage": "0.00",
-                        "amount": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
+                        "percentage": 0
                     }
                 },
                 {
                     "fulfillment_state": {
                         "descriptor": {
-                            "code": "IN_TRANSIT",
-                            "short_desc": "002"
+                            "code": "IN_TRANSIT"
                         }
                     },
                     "cancellation_fee": {
-                        "percentage": "0.00",
-                        "amount": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
-                    }
-                },
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "AT_LOCATION",
-                            "short_desc": "002"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": "0.00",
-                        "amount": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
-                    }
-                },
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "COLLECTED_BY_AGENT",
-                            "short_desc": "002"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": "0.00",
-                        "amount": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
-                    }
-                },
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "RECEIVED_AT_LAB",
-                            "short_desc": "002"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": "0.00",
-                        "amount": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
-                    }
-                },
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "TEST_COMPLETED",
-                            "short_desc": "009"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": "0.00",
-                        "amount": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
-                    }
-                },
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "REPORT_GENERATED",
-                            "short_desc": "010,011,012"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": "0.00",
-                        "amount": {
-                            "currency": "INR",
-                            "value": "0.00"
-                        }
+                        "percentage": 0
                     }
                 }
             ],
-            "created_at": "2025-11-07T08:20:38.026Z",
-            "updated_at": "2025-11-07T08:58:23.105Z",
+            "created_at": "2025-11-19T11:09:36.182Z",
+            "updated_at": "2025-11-19T11:17:00.003Z",
             "documents": [
                 {
-                    "url": "https://ondc-preprod.sequelstring.com/seller/assaying/invoice/31213223",
+                    "url": "https://ondc-preprod.sequelstring.com/seller/assaying/invoice/f5578449-dfb3-45b8-8a1c-e7d79af098e6",
                     "label": "INVOICE"
                 },
                 {
-                    "url": "https://ondc-preprod.sequelstring.com/seller/assaying/report/132312",
+                    "url": "https://ondc-preprod.sequelstring.com/seller/assaying/report/f5578449-dfb3-45b8-8a1c-e7d79af098e6",
                     "label": "REPORT"
                 }
             ]

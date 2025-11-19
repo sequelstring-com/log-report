@@ -9,13 +9,13 @@
                 "code": "IND"
             }
         },
-        "action": "init",
+        "action": "select",
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
-        "message_id": "3c0af2c5-bc59-4ed3-a46f-4c9f3430b912",
-        "timestamp": "2025-11-19T11:09:29.726Z",
+        "transaction_id": "51a3558e-ccb4-4a3d-8891-7ebedc6c06dc",
+        "message_id": "bad30cd0-9c49-4607-9711-93cc529baa8c",
+        "timestamp": "2025-11-19T10:08:01.368Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
@@ -26,16 +26,27 @@
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "7baea5a4-eb10-4cae-ad0e-a6c897ad77d7"
+                        "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     }
                 ]
             },
             "items": [
                 {
                     "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                    "location_ids": [
+                        "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                    ],
+                    "category_ids": [
+                        "SRV14-1004"
+                    ],
                     "fulfillment_ids": [
                         "SSF1"
                     ],
+                    "price": {
+                        "currency": "INR",
+                        "value": "300",
+                        "minimum_value": "300"
+                    },
                     "quantity": {
                         "selected": {
                             "count": 1
@@ -43,50 +54,22 @@
                     }
                 }
             ],
-            "billing": {
-                "name": "ONDC buyer",
-                "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
-                "state": {
-                    "name": "Karnataka"
-                },
-                "city": {
-                    "name": "Bengaluru"
-                },
-                "tax_id": "XXXXXXXXXXXXXXX",
-                "email": "nobody@nomail.com",
-                "phone": "9886098860"
-            },
             "fulfillments": [
                 {
-                    "id": "SSF1",
                     "type": "Seller-Fulfilled",
                     "stops": [
                         {
                             "type": "end",
                             "location": {
                                 "gps": "12.974002,77.613458",
-                                "address": "My House #, My buildin",
-                                "city": {
-                                    "name": "Bengaluru"
-                                },
-                                "country": {
-                                    "code": "IND"
-                                },
-                                "area_code": "560001",
-                                "state": {
-                                    "name": "Karnataka"
-                                }
+                                "area_code": "560001"
                             },
                             "time": {
-                                "label": "confirmed",
+                                "label": "selected",
                                 "range": {
                                     "start": "2025-11-19T00:00:00.000Z",
                                     "end": "2025-11-20T00:00:00.000Z"
-                                },
-                                "days": "4"
-                            },
-                            "contact": {
-                                "phone": "9886098860"
+                                }
                             }
                         }
                     ]
@@ -94,8 +77,7 @@
             ],
             "payments": [
                 {
-                    "type": "PRE-FULFILLMENT",
-                    "collected_by": "BAP"
+                    "type": "PRE-FULFILLMENT"
                 }
             ]
         }

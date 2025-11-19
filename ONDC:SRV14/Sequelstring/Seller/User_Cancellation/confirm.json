@@ -9,40 +9,53 @@
                 "code": "IND"
             }
         },
-        "action": "on_status",
+        "action": "confirm",
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
-        "message_id": "78ed3dc1-8f3a-4a73-afbf-811dcb4b1ce2",
-        "timestamp": "2025-11-19T11:16:17.581Z",
+        "transaction_id": "21111283-bac3-4d33-983f-820a2d89359f",
+        "message_id": "a58d4b7a-23a4-46a5-862e-57c507f18c99",
+        "timestamp": "2025-11-19T09:30:58.250Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "order": {
-            "id": "f5578449-dfb3-45b8-8a1c-e7d79af098e6",
-            "status": "In-progress",
             "provider": {
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
                         "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
                     }
-                ],
-                "rateable": true
+                ]
             },
+            "items": [
+                {
+                    "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                    "location_ids": [
+                        "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                    ],
+                    "fulfillment_ids": [
+                        "SSF1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    }
+                }
+            ],
             "fulfillments": [
                 {
                     "id": "SSF1",
-                    "state": {
-                        "descriptor": {
-                            "code": "REPORT_GENERATED"
-                        }
-                    },
                     "type": "Seller-Fulfilled",
                     "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
                     "stops": [
                         {
                             "type": "end",
@@ -62,44 +75,9 @@
                             },
                             "person": {
                                 "name": "Ramu"
-                            },
-                            "instructions": {
-                                "name": "Special Instructions",
-                                "short_desc": "Will be reaching in next one hour, Please keep the sample handy"
-                            },
-                            "authorization": {
-                                "type": "OTP",
-                                "token": "2190",
-                                "valid_from": "2025-11-19T11:10:32.720Z",
-                                "valid_to": "2025-11-20T11:10:32.720Z",
-                                "status": "valid"
-                            }
-                        },
-                        {
-                            "type": "start",
-                            "location": {
-                                "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae",
-                                "descriptor": {
-                                    "name": "Sequelstring Assaying Lab"
-                                },
-                                "gps": "28.497124, 77.159740"
-                            },
-                            "time": {
-                                "range": {
-                                    "start": "2025-11-19T11:10:32.726Z",
-                                    "end": "2025-11-20T11:10:32.726Z"
-                                }
-                            },
-                            "contact": {
-                                "phone": "9876543210",
-                                "email": "john.travolta@assaying.com"
-                            },
-                            "person": {
-                                "name": "John Travolta"
                             }
                         }
-                    ],
-                    "rateable": true
+                    ]
                 }
             ],
             "quote": {
@@ -162,12 +140,13 @@
                 {
                     "type": "PRE-FULFILLMENT",
                     "collected_by": "BAP",
-                    "id": "8c47e0cd-2d24-449f-b1b4-91c5f692f093",
+                    "id": "d16f0b84-3395-4c88-af93-1d996c58db62",
                     "params": {
                         "currency": "INR",
                         "amount": "300.00",
                         "bank_account_number": "xxxxx",
-                        "virtual_payment_address": "nirdosh@okicici"
+                        "virtual_payment_address": "nirdosh@okicici",
+                        "transaction_id": "b1186b58-85c8-41f3-aa05-92f8118afd3c"
                     },
                     "tags": [
                         {
@@ -228,109 +207,24 @@
                         }
                     ],
                     "status": "PAID"
-                }
-            ],
-            "items": [
-                {
-                    "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
-                    "location_ids": [
-                        "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
-                    ],
-                    "fulfillment_ids": [
-                        "SSF1"
-                    ],
-                    "quantity": {
-                        "selected": {
-                            "count": 1
-                        }
-                    },
-                    "cancellation_terms": [
-                        {
-                            "fulfillment_state": {
-                                "descriptor": {
-                                    "code": "PENDING"
-                                }
-                            },
-                            "cancellation_fee": {
-                                "percentage": 0
-                            }
-                        },
-                        {
-                            "fulfillment_state": {
-                                "descriptor": {
-                                    "code": "IN_TRANSIT"
-                                }
-                            },
-                            "cancellation_fee": {
-                                "percentage": 0
-                            }
-                        }
-                    ],
-                    "tags": [
-                        {
-                            "descriptor": {
-                                "code": "RESCHEDULE_TERMS"
-                            },
-                            "list": [
-                                {
-                                    "descriptor": {
-                                        "code": "fulfillment_state"
-                                    },
-                                    "value": "Pending"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "RESCHEDULE_ELIGIBLE"
-                                    },
-                                    "value": "true"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "RESCHEDULE_FEE"
-                                    },
-                                    "value": "0.0"
-                                },
-                                {
-                                    "descriptor": {
-                                        "code": "RESCHEDULE_WITHIN"
-                                    },
-                                    "value": "PT1D"
-                                }
-                            ]
-                        }
-                    ]
-                }
-            ],
-            "cancellation_terms": [
-                {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "PENDING"
-                        }
-                    },
-                    "cancellation_fee": {
-                        "percentage": 0
-                    }
                 },
                 {
-                    "fulfillment_state": {
-                        "descriptor": {
-                            "code": "IN_TRANSIT"
-                        }
+                    "params": {
+                        "transaction_id": "72054cb7-d194-4dfd-b3b8-01b8b8862e41"
                     },
-                    "cancellation_fee": {
-                        "percentage": 0
-                    }
+                    "status": "NOT-PAID"
                 }
             ],
-            "created_at": "2025-11-19T11:09:36.182Z",
-            "updated_at": "2025-11-19T11:16:17.581Z",
-            "documents": [
-                {
-                    "url": "https://ondc-preprod.sequelstring.com/seller/assaying/invoice/f5578449-dfb3-45b8-8a1c-e7d79af098e6",
-                    "label": "INVOICE"
+            "id": "0b2bb7ce-f235-4d90-88d0-f0d95b5b977a",
+            "status": "Created",
+            "created_at": "2025-11-19T09:30:58.250Z",
+            "updated_at": "2025-11-19T09:30:58.250Z",
+            "xinput": {
+                "form": {
+                    "submission_id": "a6c30df4-856c-49fe-9479-4a56a49e7a24",
+                    "status": "SUCCESS"
                 }
-            ]
+            }
         }
     }
 }

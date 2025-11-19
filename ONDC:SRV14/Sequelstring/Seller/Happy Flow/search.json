@@ -3,7 +3,7 @@
     "domain": "ONDC:SRV14",
     "location": {
       "city": {
-        "code": "std:080"
+        "code": "std:011"
       },
       "country": {
         "code": "IND"
@@ -11,36 +11,29 @@
     },
     "action": "search",
     "version": "2.0.0",
-    "bap_id": "ondc.sequelstring.com/buyer/protocol",
-    "bap_uri": "https://ondc.sequelstring.com/buyer/protocol",
-    "transaction_id": "fcc55d2b-e7a6-43b2-a0b8-b557c0475559",
-    "message_id": "65fdf070-8f34-46a9-a5af-34bcfc9ae245",
-    "timestamp": "2025-11-07T07:17:38.399Z",
-    "ttl": "PT30S"
+    "bap_id": "mock.ondc.org/api",
+    "bap_uri": "https://mock.ondc.org/api/services/bap",
+    "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
+    "message_id": "b17e6e38-a3e9-4cdb-8b23-cec41c1bc457",
+    "timestamp": "2025-11-19T11:09:14.687Z",
+    "ttl": "PT30S",
+    "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying"
   },
   "message": {
     "intent": {
       "item": {
-        "descriptor": {
-          "name": "Arahar Whole Assaying Services"
+        "category": {
+          "id": "SRV14-*"
         }
       },
       "fulfillment": {
         "type": "Seller-Fulfilled",
-        "customer": {
-          "person": {
-            "name": "Nagendra Shetty"
-          },
-          "contact": {
-            "phone": "9886098860"
-          }
-        },
         "stops": [
           {
             "type": "end",
             "time": {
               "range": {
-                "start": "2025-11-06T22:00:00.000Z"
+                "start": "2024-04-04T22:00:00.000Z"
               }
             },
             "location": {
@@ -72,20 +65,6 @@
                 "code": "FINDER_FEE_AMOUNT"
               },
               "value": "0"
-            }
-          ]
-        },
-        {
-          "descriptor": {
-            "code": "COMMODITY_DETAILS"
-          },
-          "display": false,
-          "list": [
-            {
-              "descriptor": {
-                "code": "COMMODITY_CODE"
-              },
-              "value": "ARHAR_WHOLE"
             }
           ]
         },
