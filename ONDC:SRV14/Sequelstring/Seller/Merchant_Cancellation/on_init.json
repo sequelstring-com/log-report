@@ -13,9 +13,9 @@
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "51a3558e-ccb4-4a3d-8891-7ebedc6c06dc",
-        "message_id": "494f2780-4f51-4801-a0d3-555b39137eda",
-        "timestamp": "2025-11-19T10:08:11.430Z",
+        "transaction_id": "bb0106ab-3d90-489a-9d07-6899e2fe2a94",
+        "message_id": "0c8d4029-f524-4e14-aa32-61b077c5c79d",
+        "timestamp": "2025-11-27T08:29:23.456Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
@@ -61,8 +61,8 @@
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-11-19T00:00:00.000Z",
-                                    "end": "2025-11-20T00:00:00.000Z"
+                                    "start": "2025-11-27T00:00:00.000Z",
+                                    "end": "2025-11-28T00:00:00.000Z"
                                 }
                             }
                         }
@@ -134,7 +134,7 @@
                 {
                     "type": "PRE-FULFILLMENT",
                     "collected_by": "BAP",
-                    "id": "f7b8ddfb-cefd-477f-9e6e-61de2dcdccac",
+                    "id": "48072db6-14c0-419f-a510-ee402a3de632",
                     "params": {
                         "currency": "INR",
                         "amount": "300.00",

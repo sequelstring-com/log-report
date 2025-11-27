@@ -13,9 +13,9 @@
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "51a3558e-ccb4-4a3d-8891-7ebedc6c06dc",
-        "message_id": "25c497ce-4ce8-4361-a3c2-2c795311c411",
-        "timestamp": "2025-11-19T10:07:37.980Z",
+        "transaction_id": "bb0106ab-3d90-489a-9d07-6899e2fe2a94",
+        "message_id": "049a8b4a-de0c-461a-aa5d-0ef0cb506cd2",
+        "timestamp": "2025-11-27T08:28:51.757Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
@@ -62,7 +62,7 @@
                     "locations": [
                         {
                             "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae",
-                            "gps": "28.497124, 77.159740",
+                            "gps": "28.497124,77.159740",
                             "address": "sultanpur",
                             "city": {
                                 "code": "std:011",
@@ -91,7 +91,7 @@
                             "id": "12345ABCD",
                             "type": "ISO",
                             "desc": "ISO Certification ",
-                            "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
+                            "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=640&q=100"
                         }
                     ],
                     "tags": [
@@ -110,7 +110,7 @@
                                     "descriptor": {
                                         "code": "category"
                                     },
-                                    "value": "SRV14-*"
+                                    "value": "SRV14-1004"
                                 },
                                 {
                                     "descriptor": {
@@ -228,6 +228,12 @@
                                                 "code": "PICKUP_TAT"
                                             },
                                             "value": "P1D"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "COMPLETION_TAT"
+                                            },
+                                            "value": "P2D"
                                         }
                                     ]
                                 },
@@ -258,7 +264,7 @@
                                             "descriptor": {
                                                 "code": "RESCHEDULE_WITHIN"
                                             },
-                                            "value": "P1D"
+                                            "value": "PT1D"
                                         }
                                     ]
                                 }
@@ -275,7 +281,7 @@
                             "recommended": true
                         },
                         {
-                            "id": "590ac3c3-4429-427d-bf80-ce0e59d93ddb",
+                            "id": "a95d007f-af6a-4865-a721-a9e224b761e3",
                             "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "descriptor": {
                                 "name": "Moisture",
@@ -356,7 +362,7 @@
                             ]
                         },
                         {
-                            "id": "4bd87c47-bb40-46a6-b722-afb474942c2e",
+                            "id": "60ef9f72-7f33-4d17-bef5-d857c3f18e67",
                             "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
                             "descriptor": {
                                 "name": "Foreign matter",

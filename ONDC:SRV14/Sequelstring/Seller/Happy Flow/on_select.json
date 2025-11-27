@@ -13,9 +13,9 @@
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
-        "message_id": "306bd1ef-b2ef-4507-a741-3f76fd3db069",
-        "timestamp": "2025-11-19T11:09:23.515Z",
+        "transaction_id": "d9008e8b-aa11-4777-bb3e-0d5c536333aa",
+        "message_id": "9f4e7f56-33c5-45c3-813a-24b6d40ef426",
+        "timestamp": "2025-11-27T07:42:32.473Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
@@ -61,8 +61,8 @@
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-11-19T00:00:00.000Z",
-                                    "end": "2025-11-20T00:00:00.000Z"
+                                    "start": "2025-11-27T00:00:00.000Z",
+                                    "end": "2025-11-28T00:00:00.000Z"
                                 }
                             }
                         }

@@ -13,9 +13,9 @@
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
-        "message_id": "cbe0d0f9-7f13-4774-89cc-408714f49280",
-        "timestamp": "2025-11-19T11:09:36.182Z",
+        "transaction_id": "d9008e8b-aa11-4777-bb3e-0d5c536333aa",
+        "message_id": "6c812ee1-6e3c-4857-ab43-cae88881cf72",
+        "timestamp": "2025-11-27T07:43:24.252Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
@@ -26,7 +26,7 @@
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                        "id": "L1"
                     }
                 ]
             },
@@ -66,8 +66,8 @@
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-11-19T00:00:00.000Z",
-                                    "end": "2025-11-20T00:00:00.000Z"
+                                    "start": "2025-11-27T00:00:00.000Z",
+                                    "end": "2025-11-28T00:00:00.000Z"
                                 }
                             },
                             "contact": {
@@ -140,13 +140,13 @@
                 {
                     "type": "PRE-FULFILLMENT",
                     "collected_by": "BAP",
-                    "id": "8c47e0cd-2d24-449f-b1b4-91c5f692f093",
+                    "id": "4b2e93de-eb5c-41e9-b1dd-432d71ec3700",
                     "params": {
                         "currency": "INR",
                         "amount": "300.00",
                         "bank_account_number": "xxxxx",
                         "virtual_payment_address": "nirdosh@okicici",
-                        "transaction_id": "1a89fafc-dada-48df-8ac0-e076240e36d3"
+                        "transaction_id": "11c2eeaf-9cfa-4138-b7dc-cf293fc22f86"
                     },
                     "tags": [
                         {
@@ -210,18 +210,18 @@
                 },
                 {
                     "params": {
-                        "transaction_id": "e9752db0-9ea4-423a-8373-992e6d754a0d"
+                        "transaction_id": "014c1e15-2dfc-4511-bc81-1740dd0d5357"
                     },
                     "status": "NOT-PAID"
                 }
             ],
-            "id": "f5578449-dfb3-45b8-8a1c-e7d79af098e6",
+            "id": "dd29cd1f-9a9b-45c6-b49b-447ea9334f7c",
             "status": "Created",
-            "created_at": "2025-11-19T11:09:36.182Z",
-            "updated_at": "2025-11-19T11:09:36.182Z",
+            "created_at": "2025-11-27T07:43:24.251Z",
+            "updated_at": "2025-11-27T07:43:24.251Z",
             "xinput": {
                 "form": {
-                    "submission_id": "376caa1c-b81c-4d7a-8f7e-3c1486662433",
+                    "submission_id": "b1604b5f-0b22-4067-941c-a174a98e51c7",
                     "status": "SUCCESS"
                 }
             }

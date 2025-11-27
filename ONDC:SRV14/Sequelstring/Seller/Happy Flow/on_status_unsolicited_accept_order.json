@@ -13,22 +13,22 @@
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "a29fdd55-765a-4173-9c73-3560c9e638c7",
-        "message_id": "a60cd162-c35a-4723-b0c5-a60ec607a7d9",
-        "timestamp": "2025-11-19T11:10:32.700Z",
+        "transaction_id": "d9008e8b-aa11-4777-bb3e-0d5c536333aa",
+        "message_id": "3654edb1-6179-47ad-9a95-527022794c8e",
+        "timestamp": "2025-11-27T07:48:51.218Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "order": {
-            "id": "f5578449-dfb3-45b8-8a1c-e7d79af098e6",
+            "id": "dd29cd1f-9a9b-45c6-b49b-447ea9334f7c",
             "status": "Accepted",
             "provider": {
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                        "id": "L1"
                     }
                 ],
                 "rateable": true
@@ -53,8 +53,8 @@
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-11-19T00:00:00.000Z",
-                                    "end": "2025-11-20T00:00:00.000Z"
+                                    "start": "2025-11-27T00:00:00.000Z",
+                                    "end": "2025-11-28T00:00:00.000Z"
                                 }
                             },
                             "contact": {
@@ -69,9 +69,9 @@
                             },
                             "authorization": {
                                 "type": "OTP",
-                                "token": "2190",
-                                "valid_from": "2025-11-19T11:10:32.720Z",
-                                "valid_to": "2025-11-20T11:10:32.720Z",
+                                "token": "8365",
+                                "valid_from": "2025-11-27T07:48:51.243Z",
+                                "valid_to": "2025-11-28T07:48:51.243Z",
                                 "status": "valid"
                             }
                         },
@@ -82,12 +82,12 @@
                                 "descriptor": {
                                     "name": "Sequelstring Assaying Lab"
                                 },
-                                "gps": "28.497124, 77.159740"
+                                "gps": "28.497124,77.159740"
                             },
                             "time": {
                                 "range": {
-                                    "start": "2025-11-19T11:10:32.726Z",
-                                    "end": "2025-11-20T11:10:32.726Z"
+                                    "start": "2025-11-27T07:48:51.253Z",
+                                    "end": "2025-11-28T07:48:51.253Z"
                                 }
                             },
                             "contact": {
@@ -162,7 +162,7 @@
                 {
                     "type": "PRE-FULFILLMENT",
                     "collected_by": "BAP",
-                    "id": "8c47e0cd-2d24-449f-b1b4-91c5f692f093",
+                    "id": "4b2e93de-eb5c-41e9-b1dd-432d71ec3700",
                     "params": {
                         "currency": "INR",
                         "amount": "300.00",
@@ -323,8 +323,8 @@
                     }
                 }
             ],
-            "created_at": "2025-11-19T11:09:36.182Z",
-            "updated_at": "2025-11-19T11:10:32.700Z"
+            "created_at": "2025-11-27T07:43:24.251Z",
+            "updated_at": "2025-11-27T07:48:51.218Z"
         }
     }
 }

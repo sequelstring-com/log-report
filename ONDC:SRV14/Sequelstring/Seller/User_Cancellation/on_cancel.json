@@ -13,16 +13,16 @@
         "version": "2.0.0",
         "bap_id": "mock.ondc.org/api",
         "bap_uri": "https://mock.ondc.org/api/services/bap",
-        "transaction_id": "21111283-bac3-4d33-983f-820a2d89359f",
-        "message_id": "097db02b-c717-4c48-9f4c-b65c5cabd9d5",
-        "timestamp": "2025-11-19T09:48:38.917Z",
+        "transaction_id": "4b5ffed3-0f62-41a6-8c1f-8023672d097b",
+        "message_id": "5ebc400f-a202-47a1-9e9a-95e5cac0c7de",
+        "timestamp": "2025-11-27T08:20:19.715Z",
         "ttl": "PT30S",
         "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
         "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
     },
     "message": {
         "order": {
-            "id": "0b2bb7ce-f235-4d90-88d0-f0d95b5b977a",
+            "id": "0a0c5c06-3e3c-4108-944b-64121512e072",
             "status": "Cancelled",
             "cancellation": {
                 "cancelled_by": "CONSUMER",
@@ -36,7 +36,7 @@
                 "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
                 "locations": [
                     {
-                        "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                        "id": "L1"
                     }
                 ],
                 "rateable": true
@@ -74,7 +74,7 @@
                 {
                     "type": "PRE-FULFILLMENT",
                     "collected_by": "BAP",
-                    "id": "d16f0b84-3395-4c88-af93-1d996c58db62",
+                    "id": "8939bd0e-a457-4cc5-8ac2-dd34b9003fca",
                     "params": {
                         "currency": "INR",
                         "amount": "300.00",
@@ -205,8 +205,8 @@
                             "time": {
                                 "label": "confirmed",
                                 "range": {
-                                    "start": "2025-11-19T00:00:00.000Z",
-                                    "end": "2025-11-20T00:00:00.000Z"
+                                    "start": "2025-11-27T00:00:00.000Z",
+                                    "end": "2025-11-28T00:00:00.000Z"
                                 }
                             },
                             "contact": {
@@ -220,8 +220,8 @@
                     "rateable": true
                 }
             ],
-            "created_at": "2025-11-19T09:30:58.250Z",
-            "updated_at": "2025-11-19T09:48:38.876Z"
+            "created_at": "2025-11-27T08:19:41.488Z",
+            "updated_at": "2025-11-27T08:20:19.704Z"
         }
     }
 }
