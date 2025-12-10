@@ -1,0 +1,450 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:011"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "on_search",
+        "version": "2.0.0",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "ca9a1daf-8839-40b7-9331-747f32643a8f",
+        "message_id": "4368861b-30a6-4685-9ac4-87d94c11936d",
+        "timestamp": "2025-12-10T06:04:49.398Z",
+        "ttl": "PT30S",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
+    },
+    "message": {
+        "catalog": {
+            "descriptor": {
+                "name": "Sequelstring Agri Assaying Provider",
+                "short_desc": "Sequelstring Assaying Provider",
+                "long_desc": "Sequelstring Assaying Provider",
+                "images": [
+                    {
+                        "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
+                    }
+                ]
+            },
+            "fulfillments": [
+                {
+                    "id": "SSF1",
+                    "type": "Seller-Fulfilled"
+                }
+            ],
+            "payments": [
+                {
+                    "id": "SSP1",
+                    "type": "PRE-FULFILLMENT"
+                }
+            ],
+            "providers": [
+                {
+                    "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
+                    "descriptor": {
+                        "name": "Sequelstring Assaying Lab",
+                        "code": "",
+                        "short_desc": "Sequelstring Assaying Lab",
+                        "long_desc": "Sequelstring Assaying Lab",
+                        "images": [
+                            {
+                                "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=256&q=100"
+                            }
+                        ]
+                    },
+                    "ttl": "P1D",
+                    "locations": [
+                        {
+                            "id": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae",
+                            "gps": "28.497124,77.159740",
+                            "address": "sultanpur",
+                            "city": {
+                                "code": "std:011",
+                                "name": "new delhi"
+                            },
+                            "state": {
+                                "code": "new delhi"
+                            },
+                            "country": {
+                                "code": "IND"
+                            },
+                            "area_code": "110030"
+                        }
+                    ],
+                    "rating": "",
+                    "time": {
+                        "label": "validity",
+                        "range": {
+                            "start": "2025-10-25T00:00:00.000Z",
+                            "end": "2027-10-25T00:00:00.000Z"
+                        },
+                        "days": "01,02,03,04,05,06,07"
+                    },
+                    "creds": [
+                        {
+                            "id": "12345ABCD",
+                            "type": "ISO",
+                            "desc": "ISO Certification ",
+                            "url": "https://www.sequelstring.com/_next/image?url=%2Fimages%2Flogo.webp&w=640&q=100"
+                        }
+                    ],
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "serviceability"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "location"
+                                    },
+                                    "value": "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "category"
+                                    },
+                                    "value": "SRV14-1004"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "type"
+                                    },
+                                    "value": "13"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "val"
+                                    },
+                                    "value": "{\"type\":\"FeatureCollection\",\"features\":[{\"type\":\"Feature\",\"geometry\":{\"type\":\"Point\",\"coordinates\":[77.22175,28.641926]}},{\"type\":\"Feature\",\"geometry\":{\"type\":\"Polygon\",\"coordinates\":[[[77.130511,28.544644],[77.120381,28.520137],[77.155577,28.518629],[77.156864,28.540422],[77.130511,28.544644]]]}}]}"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "unit"
+                                    },
+                                    "value": "geojson"
+                                }
+                            ]
+                        }
+                    ],
+                    "fulfillments": [
+                        {
+                            "phone": "9876543210",
+                            "email": "noreply@sequelstring.com"
+                        }
+                    ],
+                    "items": [
+                        {
+                            "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Testing for Arhar Whole",
+                                "short_desc": "Assaying service for Arhar Whole",
+                                "long_desc": "Assaying service for Arhar Whole"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "cancellation_terms": [
+                                {
+                                    "fulfillment_state": {
+                                        "descriptor": {
+                                            "code": "PENDING"
+                                        }
+                                    },
+                                    "cancellation_fee": {
+                                        "percentage": 0
+                                    }
+                                },
+                                {
+                                    "fulfillment_state": {
+                                        "descriptor": {
+                                            "code": "IN_TRANSIT"
+                                        }
+                                    },
+                                    "cancellation_fee": {
+                                        "percentage": 0
+                                    }
+                                }
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "COMMODITY_DETAILS"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "COMMODITY_CODE"
+                                            },
+                                            "value": "ARHAR_WHOLE"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "SERVICE_TYPE"
+                                            },
+                                            "value": "manual"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": "physical"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "ACCURACY(%)"
+                                            },
+                                            "value": "99"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "PICKUP_TAT"
+                                            },
+                                            "value": "P1D"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "COMPLETION_TAT"
+                                            },
+                                            "value": "P2D"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "RESCHEDULE_TERMS"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "FULFILLMENT_STATE"
+                                            },
+                                            "value": "Pending"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "RESCHEDULE_ELIGIBLE"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "RESCHEDULE_FEE"
+                                            },
+                                            "value": "0.00"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "RESCHEDULE_WITHIN"
+                                            },
+                                            "value": "PT1D"
+                                        }
+                                    ]
+                                }
+                            ],
+                            "time": {
+                                "label": "validity",
+                                "range": {
+                                    "start": "2025-10-25T00:00:00.000Z",
+                                    "end": "2027-10-25T00:00:00.000Z"
+                                },
+                                "days": "01,02,03,04,05,06,07"
+                            },
+                            "matched": true,
+                            "recommended": true
+                        },
+                        {
+                            "id": "a95d007f-af6a-4865-a721-a9e224b761e3",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Moisture",
+                                "code": "MOISTURE",
+                                "short_desc": "Moisture Testing",
+                                "long_desc": "Moisture Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": "physical"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "id": "60ef9f72-7f33-4d17-bef5-d857c3f18e67",
+                            "parent_item_id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "descriptor": {
+                                "name": "Foreign matter",
+                                "code": "FOREIGN_MATTER",
+                                "short_desc": "Foreign matter Testing",
+                                "long_desc": "Foreign matter Testing"
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300",
+                                "minimum_value": "300"
+                            },
+                            "quantity": {
+                                "unitized": {
+                                    "measure": {
+                                        "unit": "parameter",
+                                        "value": "1"
+                                    }
+                                },
+                                "minimum": {
+                                    "count": 1
+                                },
+                                "maximum": {
+                                    "count": 1
+                                }
+                            },
+                            "category_ids": [
+                                "SRV14-1004"
+                            ],
+                            "fulfillment_ids": [
+                                "SSF1"
+                            ],
+                            "location_ids": [
+                                "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                            ],
+                            "payment_ids": [
+                                "SSP1"
+                            ],
+                            "tags": [
+                                {
+                                    "descriptor": {
+                                        "code": "ATTRIBUTE"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "TYPE"
+                                            },
+                                            "value": "CUSTOMIZATION"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "MANDATORY"
+                                            },
+                                            "value": "true"
+                                        },
+                                        {
+                                            "descriptor": {
+                                                "code": "AUTO_SELECTED"
+                                            },
+                                            "value": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "SERVICE_INFORMATION"
+                                    },
+                                    "list": [
+                                        {
+                                            "descriptor": {
+                                                "code": "ASSAYINGTEST_TYPE"
+                                            },
+                                            "value": "physical"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
+    }
+}

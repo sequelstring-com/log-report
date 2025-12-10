@@ -1,0 +1,242 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:011"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "confirm",
+        "version": "2.0.0",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "ca9a1daf-8839-40b7-9331-747f32643a8f",
+        "message_id": "98951f4c-ad1c-4aad-8abe-5f4b9fb775a2",
+        "timestamp": "2025-12-10T06:05:54.796Z",
+        "ttl": "PT30S",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
+                "locations": [
+                    {
+                        "id": "L1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                    "location_ids": [
+                        "e3c2c8f3-9b86-4505-ab8b-8adfb1b3abae"
+                    ],
+                    "fulfillment_ids": [
+                        "SSF1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    }
+                }
+            ],
+            "fulfillments": [
+                {
+                    "id": "SSF1",
+                    "type": "Seller-Fulfilled",
+                    "tracking": false,
+                    "state": {
+                        "descriptor": {
+                            "code": "Serviceable"
+                        }
+                    },
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "12.974002,77.613458",
+                                "address": "My House #, My buildin",
+                                "city": {
+                                    "name": "Bengaluru"
+                                },
+                                "country": {
+                                    "code": "IND"
+                                },
+                                "area_code": "560001",
+                                "state": {
+                                    "name": "Karnataka"
+                                }
+                            },
+                            "time": {
+                                "label": "confirmed",
+                                "range": {
+                                    "start": "2025-12-10T00:00:00.000Z",
+                                    "end": "2025-12-11T00:00:00.000Z"
+                                },
+                                "days": "4"
+                            },
+                            "contact": {
+                                "phone": "9886098860",
+                                "email": "nobody@nomail.com"
+                            },
+                            "person": {
+                                "name": "Ramu"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "quote": {
+                "price": {
+                    "currency": "INR",
+                    "value": "300.00"
+                },
+                "breakup": [
+                    {
+                        "title": "Testing for Arhar Whole",
+                        "price": {
+                            "currency": "INR",
+                            "value": "300.00"
+                        },
+                        "item": {
+                            "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                            "quantity": {
+                                "selected": {
+                                    "count": 1
+                                }
+                            },
+                            "price": {
+                                "currency": "INR",
+                                "value": "300"
+                            }
+                        },
+                        "tags": [
+                            {
+                                "descriptor": {
+                                    "code": "title"
+                                },
+                                "list": [
+                                    {
+                                        "descriptor": {
+                                            "code": "type"
+                                        },
+                                        "value": "item"
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "ttl": "P1D"
+            },
+            "billing": {
+                "name": "ONDC buyer",
+                "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+                "state": {
+                    "name": "Karnataka"
+                },
+                "city": {
+                    "name": "Bengaluru"
+                },
+                "tax_id": "XXXXXXXXXXXXXXX",
+                "email": "nobody@nomail.com",
+                "phone": "9886098860"
+            },
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT",
+                    "collected_by": "BAP",
+                    "id": "6001c55b-8aab-4f50-93eb-027f5898c74b",
+                    "params": {
+                        "currency": "INR",
+                        "amount": "300.00",
+                        "bank_account_number": "xxxxx",
+                        "virtual_payment_address": "nirdosh@okicici",
+                        "transaction_id": "bcee2627-4d95-4682-8f72-46928a1b9255"
+                    },
+                    "tags": [
+                        {
+                            "descriptor": {
+                                "code": "SETTLEMENT_DETAILS"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "Counterparty"
+                                    },
+                                    "value": "BPP"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Mode"
+                                    },
+                                    "value": "NEFT"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Beneficiary_Name"
+                                    },
+                                    "value": "xxxxx"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Bank_Account_No"
+                                    },
+                                    "value": "xxxxx"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Ifsc_Code"
+                                    },
+                                    "value": "xxxxx"
+                                }
+                            ]
+                        },
+                        {
+                            "descriptor": {
+                                "code": "Buyer_Finder_Fee"
+                            },
+                            "list": [
+                                {
+                                    "descriptor": {
+                                        "code": "Buyer_Finder_Fee_Type"
+                                    },
+                                    "value": "percentage"
+                                },
+                                {
+                                    "descriptor": {
+                                        "code": "Buyer_Finder_Fee_Amount"
+                                    },
+                                    "value": "1%"
+                                }
+                            ]
+                        }
+                    ],
+                    "status": "PAID"
+                },
+                {
+                    "params": {
+                        "transaction_id": "7c21f7c4-452d-4c76-9002-d801c370aea4"
+                    },
+                    "status": "NOT-PAID"
+                }
+            ],
+            "id": "7f8c5c10-7ea3-460b-adde-8cc2dc6c9d77",
+            "status": "Created",
+            "created_at": "2025-12-10T06:05:54.796Z",
+            "updated_at": "2025-12-10T06:05:54.796Z",
+            "xinput": {
+                "form": {
+                    "submission_id": "adfec83e-0448-4e02-9aae-e933438effa4",
+                    "status": "SUCCESS"
+                }
+            }
+        }
+    }
+}

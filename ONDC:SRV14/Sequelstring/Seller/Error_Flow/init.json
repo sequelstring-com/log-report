@@ -1,0 +1,103 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:011"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "init",
+        "version": "2.0.0",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "ca9a1daf-8839-40b7-9331-747f32643a8f",
+        "message_id": "b9989e15-dffe-4e5a-8565-fb5f6356b6aa",
+        "timestamp": "2025-12-10T06:05:08.613Z",
+        "ttl": "PT30S",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
+    },
+    "message": {
+        "order": {
+            "provider": {
+                "id": "63a0a6f3-c69e-4bc7-ac51-b0ec0edcf18c",
+                "locations": [
+                    {
+                        "id": "9cdb1846-b39b-45c6-a9dd-533153e18af1"
+                    }
+                ]
+            },
+            "items": [
+                {
+                    "id": "6acb03db-e74e-490a-ab58-b1490e50f92c",
+                    "fulfillment_ids": [
+                        "SSF1"
+                    ],
+                    "quantity": {
+                        "selected": {
+                            "count": 1
+                        }
+                    }
+                }
+            ],
+            "billing": {
+                "name": "ONDC buyer",
+                "address": "22, Mahatma Gandhi Rd, Craig Park Layout, Ashok Nagar, Bengaluru, Karnataka 560001",
+                "state": {
+                    "name": "Karnataka"
+                },
+                "city": {
+                    "name": "Bengaluru"
+                },
+                "tax_id": "XXXXXXXXXXXXXXX",
+                "email": "nobody@nomail.com",
+                "phone": "9886098860"
+            },
+            "fulfillments": [
+                {
+                    "id": "SSF1",
+                    "type": "Seller-Fulfilled",
+                    "stops": [
+                        {
+                            "type": "end",
+                            "location": {
+                                "gps": "12.974002,77.613458",
+                                "address": "My House #, My buildin",
+                                "city": {
+                                    "name": "Bengaluru"
+                                },
+                                "country": {
+                                    "code": "IND"
+                                },
+                                "area_code": "560001",
+                                "state": {
+                                    "name": "Karnataka"
+                                }
+                            },
+                            "time": {
+                                "label": "confirmed",
+                                "range": {
+                                    "start": "2025-12-10T00:00:00.000Z",
+                                    "end": "2025-12-11T00:00:00.000Z"
+                                },
+                                "days": "4"
+                            },
+                            "contact": {
+                                "phone": "9886098860"
+                            }
+                        }
+                    ]
+                }
+            ],
+            "payments": [
+                {
+                    "type": "PRE-FULFILLMENT",
+                    "collected_by": "BAP"
+                }
+            ]
+        }
+    }
+}

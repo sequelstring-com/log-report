@@ -1,0 +1,27 @@
+{
+    "context": {
+        "domain": "ONDC:SRV14",
+        "location": {
+            "city": {
+                "code": "std:011"
+            },
+            "country": {
+                "code": "IND"
+            }
+        },
+        "action": "on_confirm",
+        "version": "2.0.0",
+        "bap_id": "mock.ondc.org/api",
+        "bap_uri": "https://mock.ondc.org/api/services/bap",
+        "transaction_id": "ca9a1daf-8839-40b7-9331-747f32643a8f",
+        "message_id": "98951f4c-ad1c-4aad-8abe-5f4b9fb775a2",
+        "timestamp": "2025-12-10T06:05:54.853Z",
+        "ttl": "PT30S",
+        "bpp_uri": "https://ondc-preprod.sequelstring.com/seller/assaying",
+        "bpp_id": "ondc-preprod.sequelstring.com/seller/assaying"
+    },
+    "error": {
+        "code": "30000",
+        "message": "'message.order.provider.locations.id' is incorrect or not part of the trail"
+    }
+}
